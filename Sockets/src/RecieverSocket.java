@@ -20,7 +20,7 @@ public class RecieverSocket {
     public RecieverSocket(int port){
         boolean done = false;
         try
-            {   while(done == false) {
+            {   //while(done == false) {
                 System.out.println("Binding to port " + port + ", please wait  ...");
                 receiverSocket = new ServerSocket(port);
                 System.out.println("Listener started: " + receiverSocket);
@@ -34,14 +34,23 @@ public class RecieverSocket {
                 int clientsPortInt = socket.getLocalPort();
                 clientsPort = Integer.toString(clientsPortInt);
                 System.out.println("Message from " + clientsPort + ": " + line);
+                /*if(line == ".newPlayer"){
+                    int newPort = socket.getPort();
+                    System.out.println("Clients Port: " + newPort);
+
+                }*/
                 message = line;
                 done = line.equals(".bye");
                 reboot();
-            }
-            System.out.println("Closing server...");
+            //}
+            System.out.println("Info received...");
         } catch(IOException ioe)
             {  System.out.println(ioe);
             }
+    }
+
+    public String getInfo (){
+        return message;
     }
 
     /**

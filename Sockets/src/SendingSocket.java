@@ -70,6 +70,6 @@ public class SendingSocket {
 
     public static void main(String args[]) throws UnknownHostException {
         SendingSocket client = null;
-        client = new SendingSocket("", 2453, ".bye");
+        client = new SendingSocket("127.0.1.1", 2313, ".newPlayer-3010");
     }
 }
