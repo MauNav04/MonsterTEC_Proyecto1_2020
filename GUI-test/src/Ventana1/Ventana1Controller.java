@@ -31,12 +31,15 @@ public class Ventana1Controller extends WindowsClass implements Initializable{
 
     public Ventana1Controller() {}
 
-    @FXML
-    public void prueba (ActionEvent e) throws IOException {
-        System.out.println("Hello");
 
-        Ventana2Controller ventana2= new Ventana2Controller("Ventana2FXML.fxml");
-        ventana2.show();
+
+    @FXML
+    public void abrirDeck (ActionEvent e) throws IOException {
+
+        Ventana2Controller ventanaDeck = new Ventana2Controller("Ventana2FXML.fxml");
+        ventanaDeck.setEverPriority(true);
+        ventanaDeck.show();
+
     }
 
     @Override

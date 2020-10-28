@@ -10,11 +10,14 @@ import java.io.IOException;
 public class WindowsClass {
     protected Stage stage;
     protected String FXMLdirectory;
+    protected Modality modality;
     protected boolean EverPriority;
 
     public WindowsClass(String FXMLdirectory) {
         this.stage = new Stage();
         this.FXMLdirectory = FXMLdirectory;
+        this.modality = Modality.WINDOW_MODAL;
+
     }
 
     public WindowsClass(){
@@ -33,22 +36,25 @@ public class WindowsClass {
         Scene scene = new Scene(root);
         // scene.getStylesheets().add(getClass().getResource("Ventana1CSS.css").toExternalForm());
         Stage stage = new Stage();
-        stage.initModality(Modality.WINDOW_MODAL);
+        stage.initModality(this.modality);
         stage.setScene(scene);
         this.setStage(stage);
         stage.show();
     }
 
-    protected boolean isEverPriority() {
+    public boolean isEverPriority() {
         return EverPriority;
     }
 
-    protected void setEverPriority(boolean everPriority) {
+    public void setEverPriority(boolean everPriority) {
         EverPriority = everPriority;
          if(EverPriority==true){
-             this.stage.initModality(Modality.APPLICATION_MODAL);
+             this.modality = Modality.APPLICATION_MODAL;
+             this.stage.initModality(this.modality);
          }
-         else{ this.stage.initModality(Modality.WINDOW_MODAL); }
+         else{
+             this.modality = Modality.WINDOW_MODAL;
+             this.stage.initModality(this.modality); }
     }
 
     /**

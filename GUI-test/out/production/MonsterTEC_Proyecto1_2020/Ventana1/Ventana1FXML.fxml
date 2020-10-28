@@ -9,6 +9,6 @@
 
 <AnchorPane fx:id="anchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Ventana1.Ventana1Controller">
    <children>
-      <Button fx:id="butP" layoutX="214.0" layoutY="135.0" mnemonicParsing="false" text="Button" onAction="#prueba" />
+      <Button fx:id="butP" layoutX="214.0" layoutY="135.0" mnemonicParsing="false" text="Button" onAction="#abrirDeck" />
    </children>
 </AnchorPane>
