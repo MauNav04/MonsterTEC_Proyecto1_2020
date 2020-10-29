@@ -27,7 +27,7 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.SendingSocket">
+  <component name="RunManager" selected="Application.Subject">
     <configuration name="SendingSocket" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="SendingSocket" />
       <module name="MonsterTEC_Proyecto1_2020" />
@@ -42,10 +42,18 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Subject" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Subject" />
+      <module name="MonsterTEC_Proyecto1_2020" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.SendingSocket" />
+        <item itemvalue="Application.Subject" />
         <item itemvalue="Application.Server" />
+        <item itemvalue="Application.SendingSocket" />
       </list>
     </recent_temporary>
   </component>
@@ -69,22 +77,22 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="466" y="121" width="424" height="478" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1603429691568" />
-    <state width="1324" height="174" key="GridCell.Tab.0.bottom" timestamp="1603771847717">
+    <state width="1324" height="174" key="GridCell.Tab.0.bottom" timestamp="1603843036125">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1324" height="174" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1603771847717" />
-    <state width="1324" height="174" key="GridCell.Tab.0.center" timestamp="1603771847716">
+    <state width="1324" height="174" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1603843036125" />
+    <state width="1324" height="174" key="GridCell.Tab.0.center" timestamp="1603843036124">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1324" height="174" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1603771847716" />
-    <state width="1324" height="174" key="GridCell.Tab.0.left" timestamp="1603771847716">
+    <state width="1324" height="174" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1603843036124" />
+    <state width="1324" height="174" key="GridCell.Tab.0.left" timestamp="1603843036123">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1324" height="174" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1603771847716" />
-    <state width="1324" height="174" key="GridCell.Tab.0.right" timestamp="1603771847717">
+    <state width="1324" height="174" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1603843036123" />
+    <state width="1324" height="174" key="GridCell.Tab.0.right" timestamp="1603843036125">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1324" height="174" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1603771847717" />
+    <state width="1324" height="174" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1603843036125" />
     <state x="166" y="0" width="1024" height="722" key="SettingsEditor" timestamp="1603770472181">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
