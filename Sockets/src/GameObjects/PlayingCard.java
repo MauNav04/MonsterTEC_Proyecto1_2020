@@ -5,6 +5,10 @@ public class PlayingCard {
     public String attribute;
     public int mana;
 
+    public PlayingCard(){
+        super();
+    }
+
     public PlayingCard(String type, String attribute, int mana){
         this.type = type;
         this.attribute = attribute;

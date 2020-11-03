@@ -9,10 +9,9 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 public class Decoder {
 
     public static void main(String[] args) throws JsonProcessingException {
-
-        String json = "{\"type\":\"S\",\"attribute\":\"TicTac\",\"mana\":15}";
+        String json = "{ \"type\" : \"S\", \"attribute\" : \"TicTAC\", \"mana\" : 50 }";
         ObjectMapper mapper = new ObjectMapper();
-        PlayingCard card = mapper.readValue();
+        PlayingCard card = mapper.readValue(json,PlayingCard.class);
 
         System.out.println(card.attribute);
         System.out.println(card.mana);
