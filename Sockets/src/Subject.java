@@ -1,8 +1,8 @@
-import javax.swing.*;
+import Structures.LinkedLists;
+
 import java.net.InetAddress;
 import java.net.UnknownHostException;
 import java.util.Random;
-import java.util.Scanner;
 
 //informacion a recibir (bool-)
 

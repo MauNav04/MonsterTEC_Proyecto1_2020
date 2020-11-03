@@ -1,3 +1,5 @@
+package Structures;
+
 public class Node {
 
     private Object info;

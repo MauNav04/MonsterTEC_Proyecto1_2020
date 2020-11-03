@@ -1,11 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="7c4ca2b5-2077-4da5-8b0e-3fda9c01399a" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -17,8 +42,8 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/jackson_files/jackson-databind-2.10.5.jar" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
@@ -27,7 +52,33 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Subject">
+  <component name="RunManager" selected="Application.Decoder">
+    <configuration name="Decoder" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="JSON.Decoder" />
+      <module name="MonsterTEC_Proyecto1_2020" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="JSON.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Encoder" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="JSON.Encoder" />
+      <module name="MonsterTEC_Proyecto1_2020" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="JSON.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="SendingSocket" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="SendingSocket" />
       <module name="MonsterTEC_Proyecto1_2020" />
@@ -51,6 +102,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Decoder" />
+        <item itemvalue="Application.Encoder" />
         <item itemvalue="Application.Subject" />
         <item itemvalue="Application.Server" />
         <item itemvalue="Application.SendingSocket" />
@@ -68,35 +121,60 @@
     </task>
     <servers />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="WindowStateProjectService">
     <state x="166" y="0" width="1024" height="722" key="#Project_Structure" timestamp="1603770368408">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="166" y="0" width="1024" height="722" key="#Project_Structure/0.0.1366.728@0.0.1366.728" timestamp="1603770368408" />
-    <state x="466" y="121" width="424" height="478" key="FileChooserDialogImpl" timestamp="1603429691568">
+    <state x="460" y="256" width="435" height="207" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1604338732426">
       <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="460" y="256" width="435" height="207" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1366.728@0.0.1366.728" timestamp="1604338732426" />
+    <state x="466" y="223" width="637" height="505" key="FileChooserDialogImpl" timestamp="1604079882052">
+      <screen x="0" y="104" width="1366" height="768" />
     </state>
     <state x="466" y="121" width="424" height="478" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1603429691568" />
-    <state width="1324" height="174" key="GridCell.Tab.0.bottom" timestamp="1603843036125">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state x="466" y="223" width="637" height="505" key="FileChooserDialogImpl/0.104.1366.768/1366.0.1280.1024@0.104.1366.768" timestamp="1604079882052" />
+    <state width="1324" height="265" key="GridCell.Tab.0.bottom" timestamp="1604383466290">
+      <screen x="0" y="0" width="2646" height="843" />
     </state>
-    <state width="1324" height="174" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1603843036125" />
-    <state width="1324" height="174" key="GridCell.Tab.0.center" timestamp="1603843036124">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="480" height="161" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1604355845949" />
+    <state width="1324" height="265" key="GridCell.Tab.0.bottom/0.0.2646.843@0.0.2646.843" timestamp="1604383466290" />
+    <state width="1324" height="174" key="GridCell.Tab.0.bottom/0.104.1366.768/1366.0.1280.1024@0.104.1366.768" timestamp="1604005900037" />
+    <state width="1324" height="265" key="GridCell.Tab.0.center" timestamp="1604383466290">
+      <screen x="0" y="0" width="2646" height="843" />
     </state>
-    <state width="1324" height="174" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1603843036124" />
-    <state width="1324" height="174" key="GridCell.Tab.0.left" timestamp="1603843036123">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="480" height="161" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1604355845948" />
+    <state width="1324" height="265" key="GridCell.Tab.0.center/0.0.2646.843@0.0.2646.843" timestamp="1604383466290" />
+    <state width="1324" height="174" key="GridCell.Tab.0.center/0.104.1366.768/1366.0.1280.1024@0.104.1366.768" timestamp="1604005900035" />
+    <state width="1324" height="265" key="GridCell.Tab.0.left" timestamp="1604383466289">
+      <screen x="0" y="0" width="2646" height="843" />
     </state>
-    <state width="1324" height="174" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1603843036123" />
-    <state width="1324" height="174" key="GridCell.Tab.0.right" timestamp="1603843036125">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="480" height="161" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1604355845947" />
+    <state width="1324" height="265" key="GridCell.Tab.0.left/0.0.2646.843@0.0.2646.843" timestamp="1604383466289" />
+    <state width="1324" height="174" key="GridCell.Tab.0.left/0.104.1366.768/1366.0.1280.1024@0.104.1366.768" timestamp="1604005900035" />
+    <state width="1324" height="265" key="GridCell.Tab.0.right" timestamp="1604383466290">
+      <screen x="0" y="0" width="2646" height="843" />
     </state>
-    <state width="1324" height="174" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1603843036125" />
-    <state x="166" y="0" width="1024" height="722" key="SettingsEditor" timestamp="1603770472181">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="480" height="161" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1604355845948" />
+    <state width="1324" height="265" key="GridCell.Tab.0.right/0.0.2646.843@0.0.2646.843" timestamp="1604383466290" />
+    <state width="1324" height="174" key="GridCell.Tab.0.right/0.104.1366.768/1366.0.1280.1024@0.104.1366.768" timestamp="1604005900036" />
+    <state x="166" y="0" width="1024" height="728" key="SettingsEditor" timestamp="1604079915009">
+      <screen x="0" y="104" width="1366" height="768" />
     </state>
     <state x="166" y="0" width="1024" height="722" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1603770472181" />
+    <state x="166" y="0" width="1024" height="728" key="SettingsEditor/0.104.1366.768/1366.0.1280.1024@0.104.1366.768" timestamp="1604079915009" />
     <state x="99" y="0" width="1157" height="722" key="new project wizard" timestamp="1603422502006">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
