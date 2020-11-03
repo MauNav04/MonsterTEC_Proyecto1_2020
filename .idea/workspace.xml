@@ -111,7 +111,11 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -144,6 +148,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Application.Subject" />
+      <item itemvalue="Application.SendingSocket" />
+      <item itemvalue="Application.Server" />
+    </list>
     <recent_temporary>
       <list>
 <<<<<<< HEAD
@@ -247,7 +256,10 @@
       </list>
     </recent_temporary>
   </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="7c4ca2b5-2077-4da5-8b0e-3fda9c01399a" name="Default Changelist" comment="" />
@@ -267,26 +279,34 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="466" y="121" width="424" height="478" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1603429691568" />
-    <state width="1324" height="174" key="GridCell.Tab.0.bottom" timestamp="1603843036125">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="1815" height="295" key="GridCell.Tab.0.bottom" timestamp="1604378439881">
+      <screen x="62" y="0" width="1858" height="1080" />
     </state>
     <state width="1324" height="174" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1603843036125" />
-    <state width="1324" height="174" key="GridCell.Tab.0.center" timestamp="1603843036124">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="1815" height="295" key="GridCell.Tab.0.bottom/62.0.1858.1080/-1366.304.1304.768@62.0.1858.1080" timestamp="1604378439881" />
+    <state width="1815" height="295" key="GridCell.Tab.0.center" timestamp="1604378439881">
+      <screen x="62" y="0" width="1858" height="1080" />
     </state>
     <state width="1324" height="174" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1603843036124" />
-    <state width="1324" height="174" key="GridCell.Tab.0.left" timestamp="1603843036123">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="1815" height="295" key="GridCell.Tab.0.center/62.0.1858.1080/-1366.304.1304.768@62.0.1858.1080" timestamp="1604378439881" />
+    <state width="1815" height="295" key="GridCell.Tab.0.left" timestamp="1604378439881">
+      <screen x="62" y="0" width="1858" height="1080" />
     </state>
     <state width="1324" height="174" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1603843036123" />
-    <state width="1324" height="174" key="GridCell.Tab.0.right" timestamp="1603843036125">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="1815" height="295" key="GridCell.Tab.0.left/62.0.1858.1080/-1366.304.1304.768@62.0.1858.1080" timestamp="1604378439881" />
+    <state width="1815" height="295" key="GridCell.Tab.0.right" timestamp="1604378439881">
+      <screen x="62" y="0" width="1858" height="1080" />
     </state>
     <state width="1324" height="174" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1603843036125" />
+    <state width="1815" height="295" key="GridCell.Tab.0.right/62.0.1858.1080/-1366.304.1304.768@62.0.1858.1080" timestamp="1604378439881" />
     <state x="166" y="0" width="1024" height="722" key="SettingsEditor" timestamp="1603770472181">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="166" y="0" width="1024" height="722" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1603770472181" />
+    <state x="687" y="363" key="com.intellij.ide.util.TipDialog" timestamp="1604378607760">
+      <screen x="62" y="0" width="1858" height="1080" />
+    </state>
+    <state x="687" y="363" key="com.intellij.ide.util.TipDialog/62.0.1858.1080/-1366.304.1304.768@62.0.1858.1080" timestamp="1604378607760" />
     <state x="99" y="0" width="1157" height="722" key="new project wizard" timestamp="1603422502006">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
