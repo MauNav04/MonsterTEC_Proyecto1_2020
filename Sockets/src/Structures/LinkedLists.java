@@ -1,3 +1,5 @@
+package Structures;
+
 public class LinkedLists {
 
     protected Node first;
@@ -26,7 +28,7 @@ public class LinkedLists {
      */
     public void lastInsert (Object object){
         Node tmp = this.first;
-        Node current =  new Node (object, null);
+        Node current =  new Node(object, null);
         if (tmp != null){
             while (tmp.getNext() != null){
                 tmp = tmp.getNext();
