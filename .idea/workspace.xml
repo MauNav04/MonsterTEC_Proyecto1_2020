@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7c4ca2b5-2077-4da5-8b0e-3fda9c01399a" name="Default Changelist" comment="" />
+    <list default="true" id="7c4ca2b5-2077-4da5-8b0e-3fda9c01399a" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/Sockets/Sockets.iml" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -23,7 +25,7 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.proportion" value="0.13476562" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
@@ -85,6 +87,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="166" y="0" width="1024" height="722" key="#Project_Structure/0.0.1366.728@0.0.1366.728" timestamp="1603770368408" />
+    <state x="449" y="194" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1604607765219">
+      <screen x="71" y="0" width="1849" height="1080" />
+    </state>
+    <state x="449" y="194" key="#com.intellij.execution.impl.EditConfigurationsDialog/71.0.1849.1080/-1366.304.1304.768@71.0.1849.1080" timestamp="1604607765219" />
     <state x="466" y="121" width="424" height="478" key="FileChooserDialogImpl" timestamp="1603429691568">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -109,10 +115,11 @@
     </state>
     <state width="1324" height="174" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1603843036125" />
     <state width="1815" height="295" key="GridCell.Tab.0.right/62.0.1858.1080/-1366.304.1304.768@62.0.1858.1080" timestamp="1604378439881" />
-    <state x="166" y="0" width="1024" height="722" key="SettingsEditor" timestamp="1603770472181">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state x="296" y="0" width="1024" height="722" key="SettingsEditor" timestamp="1604607838466">
+      <screen x="71" y="0" width="1849" height="1080" />
     </state>
     <state x="166" y="0" width="1024" height="722" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1603770472181" />
+    <state x="296" y="0" key="SettingsEditor/71.0.1849.1080/-1366.304.1304.768@71.0.1849.1080" timestamp="1604607838466" />
     <state x="687" y="363" key="com.intellij.ide.util.TipDialog" timestamp="1604378607760">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
