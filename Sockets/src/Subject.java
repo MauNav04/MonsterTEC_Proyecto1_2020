@@ -1,8 +1,11 @@
-import javax.swing.*;
+import JSON.Encoder;
+import JSON.Message;
+import Structures.LinkedLists;
+import com.fasterxml.jackson.core.JsonProcessingException;
+
 import java.net.InetAddress;
 import java.net.UnknownHostException;
 import java.util.Random;
-import java.util.Scanner;
 
 //informacion a recibir (bool-)
 
@@ -16,11 +19,11 @@ public class Subject {
     public int mana = 0;
     public LinkedLists hand;
     public LinkedLists Deck;
-    public int ServersConnectionPort=2637;
+    public int ServersConnectionPort=2464;
     private String subjectPort;
     private String subjectIP;
 
-    public Subject() throws UnknownHostException {
+    public Subject() throws UnknownHostException, JsonProcessingException {
         initializer();
 
         //ActionPerformer();
@@ -38,9 +41,9 @@ public class Subject {
 
     //Primero se debe crear el listener para poder pasar el puerto como parametro
 
-    private void initializer() throws UnknownHostException {
+    private void initializer() throws UnknownHostException, JsonProcessingException {
         HostSubject();
-        String message = MessageCreator(".newPlayer-"+this.subjectPort);
+        String message = MessageCreator();
         int connectToPort = PortToContact(this.ServersConnectionPort);
         SEND(message,connectToPort);
     }
@@ -66,8 +69,11 @@ public class Subject {
     }
 
     //Codificará el mensaje en un JSON
-    private String MessageCreator(String message){
-        return message;
+    private String MessageCreator() throws JsonProcessingException {
+        Message message = new Message(".newPlayer", this.subjectPort);
+        Encoder encoder = new Encoder();
+        String strMessage = encoder.encodeMessage(message);
+        return strMessage;
     }
 
     private void SEND(String message, int portToConnect) {
@@ -117,7 +123,7 @@ public class Subject {
         this.actionControl = !actionControl;
     }
 
-    public static void main(String args[]) throws UnknownHostException {
+    public static void main(String args[]) throws UnknownHostException, JsonProcessingException {
         Subject talker = new Subject();
     }
 

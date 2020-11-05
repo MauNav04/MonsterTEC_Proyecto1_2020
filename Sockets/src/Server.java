@@ -1,3 +1,7 @@
+import JSON.Decoder;
+import JSON.Message;
+import com.fasterxml.jackson.core.JsonProcessingException;
+
 import java.net.InetAddress;
 import java.net.UnknownHostException;
 import java.util.Random;
@@ -32,7 +36,7 @@ public class Server {
        player2Deck
      */
 
-    public Server() throws UnknownHostException {
+    public Server() throws UnknownHostException, JsonProcessingException {
         HostServer();
         waitForUsers();
         startGame();
@@ -43,35 +47,35 @@ public class Server {
         System.out.println("Game starts NOW!!");
     }
 
-    private void waitForUsers(){
+    private void waitForUsers() throws JsonProcessingException {
         while(!gameStarted) {
             LISTEN(Integer.parseInt(this.serverPort));
         }
     }
 
-    private void LISTEN(int port){
+    private void LISTEN(int port) throws JsonProcessingException {
         listener = new RecieverSocket(port);
         String message = listener.getInfo();
-        InfoProcessor(message);
+        Decoder decoder = new Decoder();
+        Message extractedInfo = decoder.Decode(message);
+        InfoProcessor(extractedInfo);
     }
 
-    private void InfoProcessor(String info){
-        String[] splittedInfo = info.split("-");
-
+    private void InfoProcessor(Message info){
         if(!gameStarted){
-            AddUser(splittedInfo);
+            AddUser(info);
         }
 
     }
 
-    private void AddUser(String[] splittedInfo){
-        if(splittedInfo[0].equals(".newPlayer")){
+    private void AddUser(Message info){
+        if(info.action.equals(".newPlayer")){
             if(this.player1Port == null){
-                this.player1Port = splittedInfo[1];
+                this.player1Port = info.port;
                 System.out.println("Player ADDED SUCCESFULLY");
             }
             else {
-                this.player2Port = splittedInfo[1];
+                this.player2Port = info.port;
                 gameStarted = true;
                 System.out.println("Player ADDED SUCCESFULLY");
             }
@@ -101,7 +105,7 @@ public class Server {
         this.serverPort = strPort;
     }
 
-    public static void main(String[] args) throws UnknownHostException {
+    public static void main(String[] args) throws UnknownHostException, JsonProcessingException {
         Server server= new Server();
     }
 }
