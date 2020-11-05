@@ -18,4 +18,10 @@ public class Decoder {
 
 
     }
+
+    public Message Decode(String json) throws JsonProcessingException {
+        ObjectMapper mapper = new ObjectMapper();
+        Message message = mapper.readValue(json, Message.class);
+        return message;
+    }
 }
