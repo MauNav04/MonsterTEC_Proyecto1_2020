@@ -29,7 +29,7 @@ public class Ventana1Controller extends WindowsClass implements Initializable{
         super(FXMLdirectory);
     }
 
-    public Ventana1Controller() {}
+    public Ventana1Controller(){}
 
 
 

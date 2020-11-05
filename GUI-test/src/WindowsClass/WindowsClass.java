@@ -35,11 +35,11 @@ public class WindowsClass {
         Parent root = loader.load();
         Scene scene = new Scene(root);
         // scene.getStylesheets().add(getClass().getResource("Ventana1CSS.css").toExternalForm());
-        Stage stage = new Stage();
-        stage.initModality(this.modality);
-        stage.setScene(scene);
+
+        this.stage.initModality(this.modality);
+        this.stage.setScene(scene);
         this.setStage(stage);
-        stage.show();
+        this.stage.show();
     }
 
     public boolean isEverPriority() {
@@ -70,5 +70,9 @@ public class WindowsClass {
      */
     public void setStage(Stage stage) {
         this.stage = stage;
+    }
+
+    public Stage getStage(){
+        return this.stage;
     }
 }
