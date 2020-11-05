@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="7725d11d-6d57-4e39-aaa6-14e8a4f27831" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Practica listas/Practica listas.iml" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+  </component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="Practica listas" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <module name="" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType" factoryName="Kotlin script">
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <module name="" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="449" y="194" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1604588619615">
+      <screen x="71" y="0" width="1849" height="1080" />
+    </state>
+    <state x="449" y="194" key="#com.intellij.execution.impl.EditConfigurationsDialog/71.0.1849.1080/-1366.304.1304.768@71.0.1849.1080" timestamp="1604588619615" />
+    <state x="775" y="233" key="FileChooserDialogImpl" timestamp="1604588594485">
+      <screen x="71" y="0" width="1849" height="1080" />
+    </state>
+    <state x="775" y="233" key="FileChooserDialogImpl/71.0.1849.1080/-1366.304.1304.768@71.0.1849.1080" timestamp="1604588594485" />
+    <state width="1806" height="295" key="GridCell.Tab.0.bottom" timestamp="1604588648170">
+      <screen x="71" y="0" width="1849" height="1080" />
+    </state>
+    <state width="1806" height="295" key="GridCell.Tab.0.bottom/71.0.1849.1080/-1366.304.1304.768@71.0.1849.1080" timestamp="1604588648170" />
+    <state width="1806" height="295" key="GridCell.Tab.0.center" timestamp="1604588648170">
+      <screen x="71" y="0" width="1849" height="1080" />
+    </state>
+    <state width="1806" height="295" key="GridCell.Tab.0.center/71.0.1849.1080/-1366.304.1304.768@71.0.1849.1080" timestamp="1604588648170" />
+    <state width="1806" height="295" key="GridCell.Tab.0.left" timestamp="1604588648170">
+      <screen x="71" y="0" width="1849" height="1080" />
+    </state>
+    <state width="1806" height="295" key="GridCell.Tab.0.left/71.0.1849.1080/-1366.304.1304.768@71.0.1849.1080" timestamp="1604588648170" />
+    <state width="1806" height="295" key="GridCell.Tab.0.right" timestamp="1604588648170">
+      <screen x="71" y="0" width="1849" height="1080" />
+    </state>
+    <state width="1806" height="295" key="GridCell.Tab.0.right/71.0.1849.1080/-1366.304.1304.768@71.0.1849.1080" timestamp="1604588648170" />
+    <state x="660" y="238" key="NewModule_or_Project.wizard" timestamp="1604588581417">
+      <screen x="71" y="0" width="1849" height="1080" />
+    </state>
+    <state x="660" y="238" key="NewModule_or_Project.wizard/71.0.1849.1080/-1366.304.1304.768@71.0.1849.1080" timestamp="1604588581417" />
+    <state x="475" y="114" key="SettingsEditor" timestamp="1604588601646">
+      <screen x="71" y="0" width="1849" height="1080" />
+    </state>
+    <state x="475" y="114" key="SettingsEditor/71.0.1849.1080/-1366.304.1304.768@71.0.1849.1080" timestamp="1604588601646" />
+    <state x="378" y="160" key="new project wizard" timestamp="1604588195911">
+      <screen x="71" y="0" width="1849" height="1080" />
+    </state>
+    <state x="378" y="160" key="new project wizard/71.0.1849.1080/-1366.304.1304.768@71.0.1849.1080" timestamp="1604588195911" />
+  </component>
+</project>
