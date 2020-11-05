@@ -11,20 +11,35 @@ import java.io.ByteArrayOutputStream;
 public class Encoder {
 
     public static void main(String[] args) throws JsonProcessingException {
-        String cardA = encodeCard (new PlayingCard("H","Rumble",40));
+        /*String cardA = encodeCard (new PlayingCard("H","Rumble",40));
         String cardB = encodeCard (new PlayingCard("A","120",30));
         String cardC = encodeCard (new PlayingCard("A","100",42));
         String cardD = encodeCard (new PlayingCard("S","TicTac",15));
-        /*LinkedLists cardList = new LinkedLists();
+        LinkedLists cardList = new LinkedLists();
         cardList.insert(cardA);
         cardList.insert(cardB);
         cardList.insert(cardC);
-        cardList.insert(cardD);*/
+        cardList.insert(cardD);
 
         //encodeHand(cardList);
+
+        encodeMessage(new Message(".newPlayer","22554"));
+        encodeMessage(new Message("action",null, true));
+        encodeMessage(new Message("action",true,16,null,100,100));*/
+
     }
 
-    public static String encodeCard(PlayingCard card) throws JsonProcessingException {
+    public String encodeMessage(Message message) throws JsonProcessingException{
+        ObjectMapper mapper = new ObjectMapper();
+        mapper.enable(SerializationFeature.INDENT_OUTPUT); //solo para printear bien
+        String jsonString = mapper.writeValueAsString(message);
+
+        System.out.println(jsonString);
+        return jsonString;
+
+    }
+
+    public String encodeCard(PlayingCard card) throws JsonProcessingException {
         ObjectMapper mapper = new ObjectMapper();
         mapper.enable(SerializationFeature.INDENT_OUTPUT); //solo para printear bien
         String jsonString = mapper.writeValueAsString(card);
