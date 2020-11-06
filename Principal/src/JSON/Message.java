@@ -6,6 +6,7 @@ public class Message {
 
     public String action;
     public String port;
+    public PlayingCard[] firstHand;
     public PlayingCard card;
     public Boolean Deck;
     public int amountDeckCards;
@@ -31,6 +32,13 @@ public class Message {
     public Message(String action, PlayingCard card, Boolean end){
         this.action = action;
         this.card = card;
+        this.end = end;
+    }
+
+    public Message(String action, PlayingCard[] firstHand, PlayingCard topDeckCard, Boolean end){
+        this.action = action;
+        this.firstHand = firstHand;
+        this.topDeckCard = topDeckCard;
         this.end = end;
     }
 

@@ -21,12 +21,14 @@ public class Subject {
     public int mana = 0;
     public ListaSimple hand;
     public ListaSimple Deck;
-    public int ServersConnectionPort= 3442;
+    public int ServersConnectionPort= 3820;
     private String subjectPort;
     private String subjectIP;
 
     public Subject() throws UnknownHostException, JsonProcessingException {
         initializer();
+        System.out.println("Listening now!");
+        LISTEN(Integer.parseInt(this.subjectPort));
 
         //ActionPerformer();
         /*if(actionControl){
@@ -87,6 +89,7 @@ public class Subject {
         listener = new RecieverSocket(port);
         String message = listener.getInfo();
         //InfoProcessor(message);
+        System.out.println("Info recieved from server");
     }
 
     private void HostSubject() throws UnknownHostException {

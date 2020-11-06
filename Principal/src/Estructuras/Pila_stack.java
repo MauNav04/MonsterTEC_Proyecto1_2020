@@ -43,5 +43,6 @@ public class Pila_stack<T>{
       this.head=this.head.getNext();
       return aux;
     }
+
     
 }

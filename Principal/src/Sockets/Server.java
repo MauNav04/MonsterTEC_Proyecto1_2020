@@ -2,6 +2,7 @@ package Sockets;
 import Estructuras.Pila_stack;
 import GameObjects.PlayingCard;
 import JSON.Decoder;
+import JSON.Encoder;
 import JSON.Message;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import java.io.IOException;
@@ -65,14 +66,18 @@ public class Server {
         Decoder decoder = new Decoder();
         PlayingCard[] completeDeck = decoder.DecodeCardFile(); // Ya se tienen todas las cartas guardadas
         CardDealer(completeDeck, false);
-        this.currentPlayer = InitialPLayer();
+        /*this.currentPlayer = InitialPLayer();
         if(this.currentPlayer == true){
             //Message message = new Message("init",this.player1Hand,this.player1Deck[this.player1Deck]) //Mensaje con las cartas
             System.out.println("Its player one turn");
         }
         else {
             System.out.println("Its player one turn");
-        }
+        }*/
+        Message startingInfoP1 = new Message("init",this.player1Hand, (PlayingCard) this.player1Deck.peek().getData(),false);
+        InfoProcessor(startingInfoP1,this.player1Port);
+
+
     }
 
     private Boolean InitialPLayer(){
@@ -142,17 +147,26 @@ public class Server {
         }
     }
 
+    private void SEND(String message, int portToConnect) {
+        delivery = new SendingSocket("", portToConnect, message);
+        System.out.println("Message Sent successfully");
+    }
+
     private void LISTEN(int port) throws JsonProcessingException {
         listener = new RecieverSocket(port);
         String message = listener.getInfo();
         Decoder decoder = new Decoder();
         Message extractedInfo = decoder.Decode(message);
-        InfoProcessor(extractedInfo);
+        InfoProcessor(extractedInfo,null);
     }
 
-    private void InfoProcessor(Message info){
+    private void InfoProcessor(Message info, String port) throws JsonProcessingException {
         if(!gameStarted){
             AddUser(info);
+        }else{
+            Encoder encoder = new Encoder();
+            String jsonString = encoder.encodeMessage(info);
+            SEND(jsonString, Integer.parseInt(port));
         }
 
     }
