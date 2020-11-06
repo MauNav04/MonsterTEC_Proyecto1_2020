@@ -38,7 +38,7 @@ public class WindowsClass {
 
         this.stage.initModality(this.modality);
         this.stage.setScene(scene);
-        this.setStage(stage);
+       // this.setStage(stage);
         this.stage.show();
     }
 

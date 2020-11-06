@@ -25,7 +25,7 @@ public class VentanaJuegoController extends WindowsClass implements Initializabl
     @FXML
     public void prueba2 (ActionEvent e) throws IOException {
         System.out.println("Hello");
-        Ventana3Controller ventanaDeck = new Ventana3Controller("Ventana3FXML.fxml");
+        VentanaInfoServerController ventanaDeck = new VentanaInfoServerController("VentanaInfoServerFXML.fxml");
        // ventanaDeck.setEverPriority(true);
         ventanaDeck.show();
 

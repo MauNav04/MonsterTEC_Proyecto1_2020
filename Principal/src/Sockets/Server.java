@@ -41,9 +41,13 @@ public class Server {
 
     public Server() throws IOException {
         HostServer();
-        waitForUsers();
-        startGame();
 
+
+    }
+
+    public void runServer() throws IOException {
+         waitForUsers();
+         startGame();
     }
 
     private void startGame() throws IOException {
@@ -55,14 +59,14 @@ public class Server {
         }
     }
 
-    private void startProtocol() throws IOException {
+    public void startProtocol() throws IOException {
         Decoder decoder = new Decoder();
         PlayingCard[] completeDeck = decoder.DecodeCardFile(); // Ya se tienen todas las cartas guardadas
         //System.out.println("completeDeck:" + completeDeck);
         System.out.println(completeDeck[0]);
     }
 
-    private void waitForUsers() throws JsonProcessingException {
+    public void waitForUsers() throws JsonProcessingException {
         while(!gameStarted) {
             LISTEN(Integer.parseInt(this.serverPort));
         }
@@ -122,5 +126,17 @@ public class Server {
 
     public static void main(String[] args) throws IOException {
         Server server= new Server();
+    }
+
+    public String getServerIp() {
+        return serverIp;
+    }
+
+    public String getServerPort() {
+        return serverPort;
+    }
+
+    public void setGameStarted(Boolean gameStarted) {
+        this.gameStarted = gameStarted;
     }
 }

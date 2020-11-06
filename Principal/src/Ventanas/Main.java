@@ -17,6 +17,5 @@ public class Main extends Application{
 
         System.out.println("Hello");
 
-       // ventana.close();
     }
 }
