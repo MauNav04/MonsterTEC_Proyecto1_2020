@@ -1,8 +1,9 @@
 package Sockets;
 
+import Estructuras.ListaSimple;
 import JSON.Encoder;
 import JSON.Message;
-import Structures.LinkedLists;
+
 import com.fasterxml.jackson.core.JsonProcessingException;
 
 import java.net.InetAddress;
@@ -19,8 +20,8 @@ public class Subject {
     public boolean actionControl = false;// false recibir - true enviar
     public int life = 0;
     public int mana = 0;
-    public LinkedLists hand;
-    public LinkedLists Deck;
+    public ListaSimple hand;
+    public ListaSimple Deck;
     public int ServersConnectionPort=2464;
     private String subjectPort;
     private String subjectIP;
