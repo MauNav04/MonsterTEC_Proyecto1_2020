@@ -30,6 +30,7 @@ public class Encoder {
     }
 
     public String encodeMessage(Message message) throws JsonProcessingException{
+
         ObjectMapper mapper = new ObjectMapper();
         mapper.enable(SerializationFeature.INDENT_OUTPUT); //solo para printear bien
         String jsonString = mapper.writeValueAsString(message);

@@ -1,7 +1,9 @@
+import GameObjects.PlayingCard;
 import JSON.Decoder;
 import JSON.Message;
 import com.fasterxml.jackson.core.JsonProcessingException;
 
+import java.io.IOException;
 import java.net.InetAddress;
 import java.net.UnknownHostException;
 import java.util.Random;
@@ -23,6 +25,7 @@ public class Server {
      */
     //Player 1 attributes
     private String player1Port;
+    //private PlayingCard[];
     private int player1Life;
     private int player1Mana;
     /* player1Hand
@@ -36,15 +39,27 @@ public class Server {
        player2Deck
      */
 
-    public Server() throws UnknownHostException, JsonProcessingException {
+    public Server() throws IOException {
         HostServer();
         waitForUsers();
         startGame();
 
     }
 
-    private void startGame(){
+    private void startGame() throws IOException {
         System.out.println("Game starts NOW!!");
+        startProtocol();
+        while(gameStarted){
+            System.out.println("This gets to the while");
+            gameStarted = !gameStarted;
+        }
+    }
+
+    private void startProtocol() throws IOException {
+        Decoder decoder = new Decoder();
+        PlayingCard[] completeDeck = decoder.DecodeCardFile(); // Ya se tienen todas las cartas guardadas
+        //System.out.println("completeDeck:" + completeDeck);
+        System.out.println(completeDeck[0]);
     }
 
     private void waitForUsers() throws JsonProcessingException {
@@ -105,7 +120,7 @@ public class Server {
         this.serverPort = strPort;
     }
 
-    public static void main(String[] args) throws UnknownHostException, JsonProcessingException {
+    public static void main(String[] args) throws IOException {
         Server server= new Server();
     }
 }

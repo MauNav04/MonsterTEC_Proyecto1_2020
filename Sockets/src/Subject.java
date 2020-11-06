@@ -19,7 +19,7 @@ public class Subject {
     public int mana = 0;
     public LinkedLists hand;
     public LinkedLists Deck;
-    public int ServersConnectionPort=2464;
+    public int ServersConnectionPort= 2072;
     private String subjectPort;
     private String subjectIP;
 
