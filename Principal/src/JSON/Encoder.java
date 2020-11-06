@@ -2,9 +2,12 @@ package JSON;
 
 import Estructuras.ListaSimple;
 import GameObjects.PlayingCard;
+
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;
+
+import java.io.ByteArrayOutputStream;
 
 public class Encoder {
 
@@ -28,6 +31,7 @@ public class Encoder {
     }
 
     public String encodeMessage(Message message) throws JsonProcessingException{
+
         ObjectMapper mapper = new ObjectMapper();
         mapper.enable(SerializationFeature.INDENT_OUTPUT); //solo para printear bien
         String jsonString = mapper.writeValueAsString(message);

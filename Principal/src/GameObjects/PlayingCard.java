@@ -6,7 +6,6 @@ public class PlayingCard {
     public int mana;
 
     public PlayingCard(){
-        super();
     }
 
     public PlayingCard(String type, String attribute, int mana){

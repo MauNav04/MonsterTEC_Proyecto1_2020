@@ -1,5 +1,4 @@
 package Sockets;
-
 import Estructuras.ListaSimple;
 import JSON.Encoder;
 import JSON.Message;
@@ -22,7 +21,7 @@ public class Subject {
     public int mana = 0;
     public ListaSimple hand;
     public ListaSimple Deck;
-    public int ServersConnectionPort=2464;
+    public int ServersConnectionPort= 2072;
     private String subjectPort;
     private String subjectIP;
 
@@ -33,11 +32,11 @@ public class Subject {
         /*if(actionControl){
             int port = PortToContact();
             String message = MessageCreator();
-            dealer = new Sockets.SendingSocket("",port,message);
+            dealer = new SendingSocket("",port,message);
         }
         else {
             int port = PortSelector();
-            listener = new Sockets.RecieverSocket(port);
+            listener = new RecieverSocket(port);
         }*/
     }
 
@@ -60,7 +59,7 @@ public class Subject {
     }
 
     private void ActionPerformer(){
-        if(this.getClass().getCanonicalName() == "Sockets.Subject"){
+        if(this.getClass().getCanonicalName() == "Subject"){
             LISTEN(Integer.parseInt(this.subjectPort));
         }
     }*/
