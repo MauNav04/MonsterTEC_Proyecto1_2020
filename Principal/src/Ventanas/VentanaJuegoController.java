@@ -10,16 +10,16 @@ import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 
-public class Ventana2Controller extends WindowsClass implements Initializable {
+public class VentanaJuegoController extends WindowsClass implements Initializable {
 
     @FXML
     public Button butP2;
 
-    public Ventana2Controller(String FXMLdirectory) {
+    public VentanaJuegoController(String FXMLdirectory) {
         super(FXMLdirectory);
     }
 
-    public Ventana2Controller() {
+    public VentanaJuegoController() {
     }
 
     @FXML

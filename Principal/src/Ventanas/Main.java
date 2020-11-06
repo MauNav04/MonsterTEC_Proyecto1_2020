@@ -10,7 +10,7 @@ public class Main extends Application{
 
     @Override
     public void start(Stage stage) throws Exception {
-        Ventana1Controller ventana = new Ventana1Controller("Ventana1FXML.fxml");
+        VentanaInicioController ventana = new VentanaInicioController("VentanaInicioFXML.fxml");
         ventana.getStage().setResizable(false);
         ventana.show();
 
