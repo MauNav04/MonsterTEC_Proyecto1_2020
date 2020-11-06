@@ -18,8 +18,8 @@ public class Decoder {
     public static void main(String[] args) throws IOException {
 
         ObjectMapper mapper = new ObjectMapper();
-
-        Deck completeDeck = mapper.readValue(Paths.get("/home/mauro/Documents/GitKrakenClones/MonsterTEC_Proyecto1_2020/Sockets/src/GameObjects/Cards.json").toFile(), Deck.class);
+        Deck completeDeck = mapper.readValue(Decoder.class.getResourceAsStream("/GameObjects/Cards.json"), Deck.class);
+        //Deck completeDeck = mapper.readValue(Paths.get("/home/mauro/Documents/GitKrakenClones/MonsterTEC_Proyecto1_2020/Sockets/src/GameObjects/Cards.json").toFile(), Deck.class);
 
         PlayingCard[] cards = completeDeck.getCompleteDeck();
 
@@ -37,7 +37,7 @@ public class Decoder {
     public PlayingCard[] DecodeCardFile() throws IOException {
         ObjectMapper mapper = new ObjectMapper();
 
-        Deck completeDeck = mapper.readValue(Paths.get("/home/mauro/Documents/GitKrakenClones/MonsterTEC_Proyecto1_2020/Sockets/src/GameObjects/Cards.json").toFile(), Deck.class);
+        Deck completeDeck = mapper.readValue(Decoder.class.getResourceAsStream("/GameObjects/Cards.json"), Deck.class);
 
         PlayingCard[] cards = completeDeck.getCompleteDeck();
 

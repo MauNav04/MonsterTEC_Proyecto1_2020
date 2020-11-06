@@ -41,7 +41,7 @@ public class Server {
 
     public Server() throws IOException {
         HostServer();
-
+        runServer();
 
     }
 
@@ -136,7 +136,7 @@ public class Server {
         return serverPort;
     }
 
-    public void setGameStarted(Boolean gameStarted) {
-        this.gameStarted = gameStarted;
+    public void setGameStarted() {
+        this.gameStarted = true;
     }
 }

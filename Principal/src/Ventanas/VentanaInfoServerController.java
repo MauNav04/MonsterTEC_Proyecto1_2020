@@ -62,7 +62,7 @@ public class VentanaInfoServerController extends WindowsClass implements Initial
     }
     @FXML
     public void Cancel(ActionEvent e){
-        this.server.setGameStarted(true);
+        this.server.setGameStarted();
         this.server = null;
         this.serverThread.interrupt();
         this.serverThread = null;

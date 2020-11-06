@@ -21,7 +21,7 @@ public class Subject {
     public int mana = 0;
     public ListaSimple hand;
     public ListaSimple Deck;
-    public int ServersConnectionPort= 2072;
+    public int ServersConnectionPort= 2143;
     private String subjectPort;
     private String subjectIP;
 
