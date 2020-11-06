@@ -1,7 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="7fc40c4e-70cc-453a-ba9d-163690a49012" name="Default Changelist" comment="" />
+    <list default="true" id="d7cd4997-d17e-44ee-90df-cbe93889de8f" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -30,10 +48,6 @@
     <option name="version" value="1" />
   </component>
   <component name="ProjectId" id="1jGFL6W4wucKUcPaRscqedWKIiy" />
-  <component name="ProjectViewState">
-    <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showLibraryContents" value="true" />
-  </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -50,47 +64,8 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Subject (1)">
-    <configuration name="Decoder" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="JSON.Decoder" />
-      <module name="MonsterTEC_Proyecto1_2020" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="JSON.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Encoder" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="JSON.Encoder" />
-      <module name="MonsterTEC_Proyecto1_2020" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="JSON.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="RecieverSocket" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Sockets.RecieverSocket" />
-      <module name="MonsterTEC_Proyecto1_2020" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Sockets.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Server (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Application.Subject">
+    <configuration name="Server" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Sockets.Server" />
       <module name="MonsterTEC_Proyecto1_2020" />
       <extension name="coverage">
@@ -103,7 +78,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Subject (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="Subject" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Sockets.Subject" />
       <module name="MonsterTEC_Proyecto1_2020" />
       <extension name="coverage">
@@ -117,19 +92,13 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.Server (1)" />
-      <item itemvalue="Application.Subject (1)" />
-      <item itemvalue="Application.RecieverSocket" />
-      <item itemvalue="Application.Encoder" />
-      <item itemvalue="Application.Decoder" />
+      <item itemvalue="Application.Server" />
+      <item itemvalue="Application.Subject" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Subject (1)" />
-        <item itemvalue="Application.Server (1)" />
-        <item itemvalue="Application.Decoder" />
-        <item itemvalue="Application.Encoder" />
-        <item itemvalue="Application.RecieverSocket" />
+        <item itemvalue="Application.Subject" />
+        <item itemvalue="Application.Server" />
       </list>
     </recent_temporary>
   </component>
@@ -138,19 +107,21 @@
     <configuration />
   </component>
   <component name="TaskManager">
-    <task active="true" id="Default" summary="Default task">
-      <changelist id="7c4ca2b5-2077-4da5-8b0e-3fda9c01399a" name="Default Changelist" comment="" />
-      <created>1603422462645</created>
-      <option name="number" value="Default" />
-      <option name="presentableId" value="Default" />
-      <updated>1603422462645</updated>
-    </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
