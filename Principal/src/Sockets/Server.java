@@ -22,6 +22,7 @@ public class Server {
     private SendingSocket delivery;
     private Boolean currentPlayer;
     private Boolean gameStarted = false;
+    private Boolean listening = false;
     /* currentCardType
        currentDamage
        currentSpell
@@ -58,25 +59,41 @@ public class Server {
         startProtocol();
         while(gameStarted){
             System.out.println("This gets to the while");
-            gameStarted = !gameStarted;
+            communicationsLoop(false);
+            //gameStarted = !gameStarted;
+        }
+    }
+
+    private void communicationsLoop(Boolean end) throws JsonProcessingException {
+        while(!end){
+            if(this.currentPlayer == true){
+                Message permission = new Message(true);
+                InfoProcessor(permission,player1Port);
+                LISTEN(Integer.parseInt(serverPort));
+            }
         }
     }
 
     public void startProtocol() throws IOException {
+        //Sacar cartas del archivo
         Decoder decoder = new Decoder();
         PlayingCard[] completeDeck = decoder.DecodeCardFile(); // Ya se tienen todas las cartas guardadas
         CardDealer(completeDeck, false);
-        /*this.currentPlayer = InitialPLayer();
-        if(this.currentPlayer == true){
+        //Repartir cartas a cada jugador e información necesaria
+        Message startingInfoP1 = new Message("init",this.player1Hand, (PlayingCard) this.player1Deck.peek().getData());
+        InfoProcessor(startingInfoP1,this.player1Port);
+        Message startingInfoP2 = new Message("init",this.player2Hand, (PlayingCard) this.player2Deck.peek().getData());
+        InfoProcessor(startingInfoP2,this.player2Port);
+        //Elegir cual jugador inicia
+        this.currentPlayer = InitialPLayer();
+        System.out.println(this.currentPlayer);
+        /*if(this.currentPlayer == true){
             //Message message = new Message("init",this.player1Hand,this.player1Deck[this.player1Deck]) //Mensaje con las cartas
             System.out.println("Its player one turn");
         }
         else {
             System.out.println("Its player one turn");
         }*/
-        Message startingInfoP1 = new Message("init",this.player1Hand, (PlayingCard) this.player1Deck.peek().getData(),false);
-        InfoProcessor(startingInfoP1,this.player1Port);
-
 
     }
 
@@ -149,10 +166,11 @@ public class Server {
 
     private void SEND(String message, int portToConnect) {
         delivery = new SendingSocket("", portToConnect, message);
-        System.out.println("Message Sent successfully");
+        System.out.println("Message Sent to Player successfully");
     }
 
     private void LISTEN(int port) throws JsonProcessingException {
+        this.listening = true;
         listener = new RecieverSocket(port);
         String message = listener.getInfo();
         Decoder decoder = new Decoder();
@@ -164,9 +182,15 @@ public class Server {
         if(!gameStarted){
             AddUser(info);
         }else{
-            Encoder encoder = new Encoder();
-            String jsonString = encoder.encodeMessage(info);
-            SEND(jsonString, Integer.parseInt(port));
+            if (this.listening == false) {
+                Encoder encoder = new Encoder();
+                String jsonString = encoder.encodeMessage(info);
+                SEND(jsonString, Integer.parseInt(port));
+            }
+            else{
+                this.listening = false;
+                System.out.println("The client answered: " + info);
+            }
         }
 
     }

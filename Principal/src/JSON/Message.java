@@ -4,6 +4,7 @@ import GameObjects.PlayingCard;
 
 public class Message {
 
+    public Boolean permission;
     public String action;
     public String port;
     public PlayingCard[] firstHand;
@@ -18,6 +19,10 @@ public class Message {
 
     public Message(){
         super();
+    }
+
+    public  Message(Boolean permission){
+        this.permission = permission;
     }
 
     public Message(String action, Boolean Deck, int amountDeckCards, PlayingCard topDeckCard, int playerLife, int playerMana) {
@@ -35,11 +40,10 @@ public class Message {
         this.end = end;
     }
 
-    public Message(String action, PlayingCard[] firstHand, PlayingCard topDeckCard, Boolean end){
+    public Message(String action, PlayingCard[] firstHand, PlayingCard topDeckCard){
         this.action = action;
         this.firstHand = firstHand;
         this.topDeckCard = topDeckCard;
-        this.end = end;
     }
 
     public Message(String action, String port){

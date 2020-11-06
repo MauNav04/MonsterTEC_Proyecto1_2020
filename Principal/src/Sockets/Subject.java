@@ -12,7 +12,8 @@ import java.util.Random;
 //informacion a recibir (bool-)
 
 public class Subject {
-    //private boolean palying = false;
+
+    private boolean palying = false;
     private RecieverSocket listener;
     private SendingSocket deliver;
     private boolean connected = false;
@@ -21,7 +22,7 @@ public class Subject {
     public int mana = 0;
     public ListaSimple hand;
     public ListaSimple Deck;
-    public int ServersConnectionPort= 3820;
+    public int ServersConnectionPort= 2124;
     private String subjectPort;
     private String subjectIP;
 
