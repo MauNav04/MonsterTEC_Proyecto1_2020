@@ -116,8 +116,13 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+<<<<<<< Updated upstream
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
+=======
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.13476562" />
+>>>>>>> Stashed changes
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
@@ -299,10 +304,18 @@
     </state>
     <state width="1324" height="174" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1603843036125" />
     <state width="1815" height="295" key="GridCell.Tab.0.right/62.0.1858.1080/-1366.304.1304.768@62.0.1858.1080" timestamp="1604378439881" />
+<<<<<<< Updated upstream
     <state x="166" y="0" width="1024" height="722" key="SettingsEditor" timestamp="1603770472181">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="166" y="0" width="1024" height="722" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1603770472181" />
+=======
+    <state x="296" y="0" width="1024" height="722" key="SettingsEditor" timestamp="1604610522739">
+      <screen x="71" y="0" width="1849" height="1080" />
+    </state>
+    <state x="166" y="0" width="1024" height="722" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1603770472181" />
+    <state x="296" y="0" key="SettingsEditor/71.0.1849.1080/-1366.304.1304.768@71.0.1849.1080" timestamp="1604610522739" />
+>>>>>>> Stashed changes
     <state x="687" y="363" key="com.intellij.ide.util.TipDialog" timestamp="1604378607760">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>

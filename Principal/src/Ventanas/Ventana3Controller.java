@@ -1,6 +1,5 @@
-package Ventana3;
+package Ventanas;
 
-import WindowsClass.WindowsClass;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;

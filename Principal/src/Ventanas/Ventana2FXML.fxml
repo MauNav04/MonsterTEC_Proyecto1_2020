@@ -8,11 +8,10 @@
 
 <AnchorPane xmlns="http://javafx.com/javafx"
             xmlns:fx="http://javafx.com/fxml"
-            fx:controller="Ventana3.Ventana3Controller"
+            fx:controller="Ventanas.Ventana2Controller"
             prefHeight="400.0" prefWidth="600.0">
     <children>
-        <Button fx:id="butP3" layoutX="214.0" layoutY="135.0" mnemonicParsing="false" text="Ventana3" onAction="#prueba3"/>
+        <Button fx:id="butP2" layoutX="214.0" layoutY="135.0" mnemonicParsing="false" text="Ventana2" onAction="#prueba2"/>
     </children>
-
 
 </AnchorPane>

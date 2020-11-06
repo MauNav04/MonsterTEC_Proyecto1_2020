@@ -1,12 +1,10 @@
 package JSON;
 
+import Estructuras.ListaSimple;
 import GameObjects.PlayingCard;
-import Structures.LinkedLists;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;
-
-import java.io.ByteArrayOutputStream;
 
 public class Encoder {
 
@@ -49,12 +47,12 @@ public class Encoder {
         return jsonString;
     }
 
-    public static void encodeHand(LinkedLists hand) throws JsonProcessingException {
-        int listSize  = hand.getSize();
+    public static void encodeHand(ListaSimple hand) throws JsonProcessingException {
+        int listSize  = hand.getLen();
         String jsonString = "[";
 
         for (int i = 0; i < listSize; i++) {
-            String encodedCard = hand.get(i).toString();
+            String encodedCard = hand.getInfo(i).toString();
             if (i != listSize - 1) {
                 jsonString = jsonString + encodedCard + ",";
             }

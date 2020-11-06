@@ -1,12 +1,7 @@
-package Ventana1;
+package Ventanas;
 
-import Ventana1.Ventana1Controller;
-import Ventana2.Ventana2Controller;
-import Ventana3.Ventana3Controller;
 import javafx.application.Application;
 import javafx.stage.Stage;
-
-import java.io.IOException;
 
 public class Main extends Application{
     public static  void main(String[] args) throws Exception {

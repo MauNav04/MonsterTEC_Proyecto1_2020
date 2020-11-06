@@ -1,3 +1,5 @@
+package Sockets;
+
 import JSON.Encoder;
 import JSON.Message;
 import Structures.LinkedLists;
@@ -30,11 +32,11 @@ public class Subject {
         /*if(actionControl){
             int port = PortToContact();
             String message = MessageCreator();
-            dealer = new SendingSocket("",port,message);
+            dealer = new Sockets.SendingSocket("",port,message);
         }
         else {
             int port = PortSelector();
-            listener = new RecieverSocket(port);
+            listener = new Sockets.RecieverSocket(port);
         }*/
     }
 
@@ -57,7 +59,7 @@ public class Subject {
     }
 
     private void ActionPerformer(){
-        if(this.getClass().getCanonicalName() == "Subject"){
+        if(this.getClass().getCanonicalName() == "Sockets.Subject"){
             LISTEN(Integer.parseInt(this.subjectPort));
         }
     }*/

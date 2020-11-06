@@ -1,8 +1,5 @@
-package Ventana1;
+package Ventanas;
 
-import Ventana2.Ventana2Controller;
-import Ventana3.Ventana3Controller;
-import WindowsClass.WindowsClass;
 import javafx.application.Application;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;

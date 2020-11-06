@@ -1,3 +1,5 @@
+package Sockets;
+
 import JSON.Decoder;
 import JSON.Message;
 import com.fasterxml.jackson.core.JsonProcessingException;
@@ -9,7 +11,7 @@ import java.util.Random;
 
 public class Server {
 
-    //Server atributes
+    //Sockets.Server atributes
     private String serverIp;
     private String serverPort;
     private RecieverSocket listener;
