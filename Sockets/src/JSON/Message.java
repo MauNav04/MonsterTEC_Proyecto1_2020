@@ -13,6 +13,7 @@ public class Message {
     public int playerLife;
     public int playerMana;
     public Boolean end;
+    public PlayingCard[] firstHand;
     //public *** effectThrown; // after card
 
     public Message(){
@@ -31,6 +32,13 @@ public class Message {
     public Message(String action, PlayingCard card, Boolean end){
         this.action = action;
         this.card = card;
+        this.end = end;
+    }
+
+    public Message(String action, PlayingCard[] firstHand, PlayingCard topDeckCard, Boolean end){
+        this.action = action;
+        this.firstHand = firstHand;
+        this.topDeckCard = topDeckCard;
         this.end = end;
     }
 

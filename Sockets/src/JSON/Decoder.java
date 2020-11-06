@@ -41,11 +41,7 @@ public class Decoder {
 
         PlayingCard[] cards = completeDeck.getCompleteDeck();
 
-        PlayingCard card = cards[2];
-
-        System.out.println(card.attribute);
-
-        return completeDeck.getCompleteDeck();
+        return cards;
     }
 
 
