@@ -4,7 +4,9 @@ import Sockets.Server;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Parent;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 
@@ -30,42 +32,21 @@ public class VentanaInicioController extends WindowsClass implements Initializab
     public VentanaInicioController(){}
 
 
-
+    @FXML
+    public void Unirse(){
+        this.close();
+    }
 
 
     @FXML
     public void CrearServer (ActionEvent e) throws IOException {
-        server = new Server();
-        this.ipEntry.setText(server.getServerIp());
-        this.portEntry.setText(server.getServerPort());
-        Thread thread = new Thread(new Runnable() {
-            @Override
-            public void run()  {
-                try {
-                    server.runServer();
-                } catch (JsonProcessingException e) {
-                    e.printStackTrace();
-                } catch (IOException ex) {
-                    ex.printStackTrace();
-                }
-            }
-        });
-        thread.start();
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("VentanaInfoServerFXML.fxml"));
+        Parent root = loader.load();
+        VentanaInfoServerController ventana = loader.getController();
+        ventana.show(root);
+        ventana.setServerInfo();
+        this.close();
 
-        System.out.println("Prueba");
-
-
-
-      //  VentanaInfoServerController ventanaServer = new VentanaInfoServerController("VentanaInfoServerFXML.fxml");
-     //   ventanaServer.setEverPriority(true);
-
-
-       // ventanaServer.show();
-
-
-
-
-       // ventanaServer.setPreviusWin(this);
 
 
     }

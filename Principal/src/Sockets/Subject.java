@@ -108,7 +108,7 @@ public class Subject {
     }
 
     private void SEND(String message, int portToConnect) {
-        deliver = new SendingSocket("", portToConnect, message);
+        deliver = new SendingSocket("10.0.0.3", portToConnect, message);//deliver = new SendingSocket("", portToConnect, message);
         System.out.println("Message Sent successfully");
     }
 

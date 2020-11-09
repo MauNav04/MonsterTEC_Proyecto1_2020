@@ -14,7 +14,6 @@ public class WindowsClass {
     protected boolean EverPriority;
 
     public WindowsClass(String FXMLdirectory) {
-        this.stage = new Stage();
         this.FXMLdirectory = FXMLdirectory;
         this.modality = Modality.WINDOW_MODAL;
 
@@ -29,18 +28,19 @@ public class WindowsClass {
      *
      */
 
-    public void show() throws IOException {
-        FXMLLoader loader = new FXMLLoader();
-        loader.setLocation(getClass().getResource(this.FXMLdirectory));
-        Parent root = loader.load();
-        Scene scene = new Scene(root);
-        // scene.getStylesheets().add(getClass().getResource("Ventana1CSS.css").toExternalForm());
 
-        this.stage.initModality(this.modality);
+    public void show(Parent root) throws IOException {
+        Scene scene = new Scene(root);
+        this.stage = new Stage();
         this.stage.setScene(scene);
-       // this.setStage(stage);
         this.stage.show();
     }
+
+
+    public void build() throws IOException {
+
+    }
+
 
     public boolean isEverPriority() {
         return EverPriority;

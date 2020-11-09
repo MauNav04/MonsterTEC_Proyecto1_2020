@@ -25,11 +25,9 @@ public class VentanaInfoServerController extends WindowsClass implements Initial
 
     public VentanaInfoServerController(String FXMLdirectory) {
         super(FXMLdirectory);
-        this.labelIP = new Label();
-        this.labelPort = new Label();
-
     }
-    public VentanaInfoServerController() { }
+    public VentanaInfoServerController() {
+    }
     ///_________________________________________________________________________________________________________________
 
 
@@ -40,12 +38,31 @@ public class VentanaInfoServerController extends WindowsClass implements Initial
 
 
     public void setServerInfo() throws IOException {
+       // this.server = new Server();
+        String[] args = new String[0];
+        this.server = Server.mainServer(args);
 
-        this.server = new Server();
-
-        this.labelIP.setText("Hello");
-        this.labelPort.setText("Am fine");
-
+        /*
+        this.serverThread = new Thread(new Runnable() {
+            @Override
+            public void run()  {
+                try {
+                    server.runServer();
+                } catch (JsonProcessingException e) {
+                    e.printStackTrace();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+        });
+        serverThread.start();
+*/
+        System.out.println(server.getServerPort());
+        this.labelIP.setText(server.getServerIp());
+        this.labelPort.setText(server.getServerPort());
+        this.close();
+    }
+/*
         this.serverThread = new Thread(new Runnable() {
             @Override
             public void run()  {
@@ -62,6 +79,8 @@ public class VentanaInfoServerController extends WindowsClass implements Initial
 
 
     }
+
+ */
     @FXML
     public void Cancel(ActionEvent e){
         this.server.setGameStarted();
@@ -72,6 +91,8 @@ public class VentanaInfoServerController extends WindowsClass implements Initial
 
 
     }
+
+
 
 
 

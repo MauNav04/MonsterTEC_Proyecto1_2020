@@ -3,7 +3,9 @@ package Ventanas;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Parent;
 import javafx.scene.control.Button;
 
 import java.io.IOException;
@@ -25,9 +27,10 @@ public class VentanaJuegoController extends WindowsClass implements Initializabl
     @FXML
     public void prueba2 (ActionEvent e) throws IOException {
         System.out.println("Hello");
-        VentanaInfoServerController ventanaDeck = new VentanaInfoServerController("VentanaInfoServerFXML.fxml");
-       // ventanaDeck.setEverPriority(true);
-        ventanaDeck.show();
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("VentanaInfoServerFXML.fxml"));
+        Parent root = loader.load();
+        VentanaInfoServerController ventanaDeck = loader.getController();
+        ventanaDeck.show(root);
 
 
     }
