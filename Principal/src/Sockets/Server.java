@@ -55,7 +55,7 @@ public class Server {
     }
 
     private void startGame() throws IOException {
-        System.out.println("Game starts NOW!!");
+        System.out.println("Game starts NOW!! - Server");
         startProtocol();
         while(gameStarted){
             System.out.println("This gets to the while");
@@ -64,13 +64,18 @@ public class Server {
         }
     }
 
-    private void communicationsLoop(Boolean end) throws JsonProcessingException {
+    private void communicationsLoop(Boolean end) throws IOException {
         while(!end){
+            System.out.println("Permission Message fails");
+            Message permission = new Message(true);
             if(this.currentPlayer == true){
-                Message permission = new Message(true);
                 InfoProcessor(permission,player1Port);
-                LISTEN(Integer.parseInt(serverPort));
+            }else {
+                InfoProcessor(permission,player2Port);
             }
+            LISTEN(Integer.parseInt(serverPort));
+
+
         }
     }
 
@@ -86,7 +91,12 @@ public class Server {
         InfoProcessor(startingInfoP2,this.player2Port);
         //Elegir cual jugador inicia
         this.currentPlayer = InitialPLayer();
-        System.out.println(this.currentPlayer);
+        if(this.currentPlayer == true){
+            System.out.println("Initial PLayer: PLayer 1");
+        }else{
+            System.out.println("Initial PLayer: PLayer 2");
+        }
+
         /*if(this.currentPlayer == true){
             //Message message = new Message("init",this.player1Hand,this.player1Deck[this.player1Deck]) //Mensaje con las cartas
             System.out.println("Its player one turn");
@@ -158,7 +168,7 @@ public class Server {
     }
 
 
-    public void waitForUsers() throws JsonProcessingException {
+    public void waitForUsers() throws IOException {
         while(!gameStarted) {
             LISTEN(Integer.parseInt(this.serverPort));
         }
@@ -169,7 +179,7 @@ public class Server {
         System.out.println("Message Sent to Player successfully");
     }
 
-    private void LISTEN(int port) throws JsonProcessingException {
+    private void LISTEN(int port) throws IOException {
         this.listening = true;
         listener = new RecieverSocket(port);
         String message = listener.getInfo();
@@ -203,6 +213,7 @@ public class Server {
             }
             else {
                 this.player2Port = info.port;
+                this.listening = false;
                 gameStarted = true;
                 System.out.println("Player ADDED SUCCESFULLY");
             }

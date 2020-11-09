@@ -1,10 +1,13 @@
 package Sockets;
 import Estructuras.ListaSimple;
+import GameObjects.PlayingCard;
+import JSON.Decoder;
 import JSON.Encoder;
 import JSON.Message;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 
+import java.io.IOException;
 import java.net.InetAddress;
 import java.net.UnknownHostException;
 import java.util.Random;
@@ -20,16 +23,18 @@ public class Subject {
     public boolean actionControl = false;// false recibir - true enviar
     public int life = 0;
     public int mana = 0;
-    public ListaSimple hand;
-    public ListaSimple Deck;
-    public int ServersConnectionPort= 2124;
+    public String[] hand = new String[10];
+    public PlayingCard topDeckCard;
+    public Boolean inGame;
+    public Boolean end;
+    public int ServersConnectionPort= 2080;
     private String subjectPort;
     private String subjectIP;
 
-    public Subject() throws UnknownHostException, JsonProcessingException {
+    public Subject() throws IOException {
         initializer();
-        System.out.println("Listening now!");
-        LISTEN(Integer.parseInt(this.subjectPort));
+        AdjustInitInfo();
+        startGame();
 
         //ActionPerformer();
         /*if(actionControl){
@@ -42,6 +47,21 @@ public class Subject {
             listener = new RecieverSocket(port);
         }*/
     }
+
+    private void AdjustInitInfo() throws IOException {
+        LISTEN(Integer.parseInt(this.subjectPort)); // Espera para recibir info inicial
+
+    }
+
+    private void startGame() throws IOException {
+        System.out.println("Game starts now - Client");
+        while(inGame){
+            LISTEN(Integer.parseInt(this.subjectPort)); // Espera hasta que se le de el permiso de jugar
+            //communicationsLoop(false);
+            //gameStarted = !gameStarted;
+        }
+    }
+
 
 
     //Primero se debe crear el listener para poder pasar el puerto como parametro
@@ -81,16 +101,23 @@ public class Subject {
         return strMessage;
     }
 
+    private Message MessageDecoder(String message) throws JsonProcessingException {
+        Decoder decoder = new Decoder();
+        Message startInfo = decoder.Decode(message);
+        return startInfo;
+    }
+
     private void SEND(String message, int portToConnect) {
         deliver = new SendingSocket("", portToConnect, message);
         System.out.println("Message Sent successfully");
     }
 
-    private void LISTEN(int port){
+    private void LISTEN(int port) throws IOException {
         listener = new RecieverSocket(port);
         String message = listener.getInfo();
-        //InfoProcessor(message);
-        System.out.println("Info recieved from server");
+        Message messageObject = MessageDecoder(message);
+        InfoUpdate(messageObject);
+        //System.out.println("Info recieved from server: " + message);
     }
 
     private void HostSubject() throws UnknownHostException {
@@ -98,14 +125,17 @@ public class Subject {
         getPort();
     }
 
-    private void InfoUpdate(String message){ //message structure "50,80" - "Life-Mana" (order)
-        String[] splitted = message.split(",");
-        int getLife = Integer.parseInt(splitted[0]);
+    private void InfoUpdate(Message infoFromServer){ //message structure "50,80" - "Life-Mana" (order)
+        if(!inGame){
+
+        }
+
+        /*int getLife = Integer.parseInt(splitted[0]);
         int getMana = Integer.parseInt(splitted[1]);
         this.life = getLife;
         this.mana = getMana;
         System.out.println(life);
-        System.out.println(mana);
+        System.out.println(mana);*/
     }
 
     private void getIp() throws UnknownHostException {
@@ -129,7 +159,7 @@ public class Subject {
         this.actionControl = !actionControl;
     }
 
-    public static void main(String args[]) throws UnknownHostException, JsonProcessingException {
+    public static void main(String args[]) throws IOException {
         Subject talker = new Subject();
     }
 

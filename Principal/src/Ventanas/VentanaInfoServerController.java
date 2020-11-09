@@ -53,6 +53,8 @@ public class VentanaInfoServerController extends WindowsClass implements Initial
                     server.waitForUsers();
                 } catch (JsonProcessingException e) {
                     e.printStackTrace();
+                } catch (IOException e) {
+                    e.printStackTrace();
                 }
             }
         });

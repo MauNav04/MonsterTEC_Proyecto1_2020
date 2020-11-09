@@ -18,7 +18,7 @@ public class RecieverSocket {
      * Luego termina la conexión
      * @param port Puerto en el que escuchara el Servidor
      */
-    public RecieverSocket(int port){
+    public RecieverSocket(int port) throws IOException {
         boolean done = false;
         try
             {   //while(done == false) {
@@ -48,6 +48,7 @@ public class RecieverSocket {
         } catch(IOException ioe)
             {  System.out.println(ioe);
             }
+        close();
     }
 
     public String getInfo (){
@@ -73,17 +74,16 @@ public class RecieverSocket {
         System.out.println("Cleaning ...");
     }
 
-
-    /*public void close() throws IOException
+    public void close() throws IOException
     {   socket.close();
         streamIn.close();
         receiverSocket.close();
         System.out.println("Closing server...");
-    }*/
+    }
 
 
-    public static void main(String args[])
-    {  RecieverSocket server = null;
+    public static void main(String args[]) throws IOException {
+        RecieverSocket server = null;
         server = new RecieverSocket(2453);
     }
 }
