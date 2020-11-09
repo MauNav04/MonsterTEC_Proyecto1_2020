@@ -28,6 +28,7 @@ public class Subject {
     public Boolean inGame;
     public Boolean end;
     public int ServersConnectionPort= 2080;
+    public String ServersConnectionIP;
     private String subjectPort;
     private String subjectIP;
 
@@ -108,7 +109,7 @@ public class Subject {
     }
 
     private void SEND(String message, int portToConnect) {
-        deliver = new SendingSocket("10.0.0.3", portToConnect, message);//deliver = new SendingSocket("", portToConnect, message);
+        deliver = new SendingSocket(this.ServersConnectionIP, portToConnect, message);//deliver = new SendingSocket("", portToConnect, message);
         System.out.println("Message Sent successfully");
     }
 

@@ -13,8 +13,8 @@
             prefHeight="400.0" prefWidth="600.0">
     <children>
         <Button fx:id="butP" layoutX="257.0" layoutY="176.0" mnemonicParsing="false" onAction="#Jugar" text="Jugar" />
-        <Label fx:id="labelIP" layoutX="127.0" layoutY="57.0" prefHeight="25.0" prefWidth="222.0" style="-fx-background-color: transparent;" />
-        <Label fx:id="labelPort" layoutX="127.0" layoutY="115.0" prefHeight="25.0" prefWidth="222.0" style="-fx-background-color: transparent;"/>
+        <Label  layoutX="127.0" layoutY="57.0" prefHeight="25.0" prefWidth="222.0" style="-fx-background-color: transparent;" fx:id="labelIP" />
+        <Label layoutX="127.0" layoutY="115.0" prefHeight="25.0" prefWidth="222.0" style="-fx-background-color: transparent;" fx:id="labelPort" />
         <Button layoutX="157.0" layoutY="176.0" mnemonicParsing="false" text="Cancelar" onAction="#Cancel"/>
         <Label layoutX="65.0" layoutY="57.0" prefHeight="17.0" prefWidth="28.0" style="-fx-background-color: transparent;" text="IP">
             <font>

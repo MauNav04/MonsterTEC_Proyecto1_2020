@@ -223,7 +223,7 @@ public class Server {
 
     private void HostServer() throws UnknownHostException {
         getIp();
-        getPort();
+        getPort2();
     }
 
     private void getIp() throws UnknownHostException {
@@ -252,8 +252,8 @@ public class Server {
         Server server= new Server();
     }
 
-    public static Server mainServer(String[] args) throws IOException {
-        Server server= new Server();
+    public static Server mainServer(String[] args) throws IOException{
+        Server server = new Server();
         return server;
     }
 

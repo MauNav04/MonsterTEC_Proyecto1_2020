@@ -16,7 +16,7 @@ public class Main extends Application{
         FXMLLoader loader = new FXMLLoader(getClass().getResource("VentanaInicioFXML.fxml"));
         Parent root =  loader.load();
         VentanaInicioController ventana = loader.getController();
-        ventana.show(root);
+        ventana.build(root);
 
 
 

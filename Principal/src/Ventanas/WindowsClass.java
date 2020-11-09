@@ -9,15 +9,10 @@ import java.io.IOException;
 
 public class WindowsClass {
     protected Stage stage;
-    protected String FXMLdirectory;
-    protected Modality modality;
-    protected boolean EverPriority;
+    protected WindowsClass previus;
 
-    public WindowsClass(String FXMLdirectory) {
-        this.FXMLdirectory = FXMLdirectory;
-        this.modality = Modality.WINDOW_MODAL;
 
-    }
+
 
     public WindowsClass(){
         this.stage = new Stage();
@@ -29,7 +24,7 @@ public class WindowsClass {
      */
 
 
-    public void show(Parent root) throws IOException {
+    public void build(Parent root) throws IOException {
         Scene scene = new Scene(root);
         this.stage = new Stage();
         this.stage.setScene(scene);
@@ -37,25 +32,15 @@ public class WindowsClass {
     }
 
 
-    public void build() throws IOException {
+    public void show() throws IOException {
+        this.stage.show();
+    }
+
+    public void setPrevius(WindowsClass win){
+        this.previus = win;
 
     }
 
-
-    public boolean isEverPriority() {
-        return EverPriority;
-    }
-
-    public void setEverPriority(boolean everPriority) {
-        EverPriority = everPriority;
-         if(EverPriority==true){
-             this.modality = Modality.APPLICATION_MODAL;
-             this.stage.initModality(this.modality);
-         }
-         else{
-             this.modality = Modality.WINDOW_MODAL;
-             this.stage.initModality(this.modality); }
-    }
 
     /**
      * Cierra  la ventana

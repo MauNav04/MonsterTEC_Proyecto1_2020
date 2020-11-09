@@ -23,12 +23,42 @@ public class VentanaInfoServerController extends WindowsClass implements Initial
     public Label labelPort;
 
 
-    public VentanaInfoServerController(String FXMLdirectory) {
-        super(FXMLdirectory);
-    }
+
     public VentanaInfoServerController() {
     }
     ///_________________________________________________________________________________________________________________
+
+
+
+
+
+
+
+    public void setServerInfo() throws IOException {
+
+        String[] args = new String[0];
+        this.server = Server.mainServer(args);
+        this.serverThread  = new Thread(new Runnable() {
+            @Override
+            public void run()  {
+                try {
+                    server.runServer();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+        });
+        this.serverThread.start();
+
+
+        System.out.println(server.getServerPort());
+        this.labelIP.setText(server.getServerIp());
+        this.labelPort.setText(server.getServerPort());
+
+
+
+    }
+
 
 
     @FXML
@@ -37,61 +67,17 @@ public class VentanaInfoServerController extends WindowsClass implements Initial
     }
 
 
-    public void setServerInfo() throws IOException {
-       // this.server = new Server();
-        String[] args = new String[0];
-        this.server = Server.mainServer(args);
-
-        /*
-        this.serverThread = new Thread(new Runnable() {
-            @Override
-            public void run()  {
-                try {
-                    server.runServer();
-                } catch (JsonProcessingException e) {
-                    e.printStackTrace();
-                } catch (IOException e) {
-                    e.printStackTrace();
-                }
-            }
-        });
-        serverThread.start();
-*/
-        System.out.println(server.getServerPort());
-        this.labelIP.setText(server.getServerIp());
-        this.labelPort.setText(server.getServerPort());
-        this.close();
-    }
-/*
-        this.serverThread = new Thread(new Runnable() {
-            @Override
-            public void run()  {
-                try {
-                    server.waitForUsers();
-                } catch (JsonProcessingException e) {
-                    e.printStackTrace();
-                } catch (IOException e) {
-                    e.printStackTrace();
-                }
-            }
-        });
-        //serverThread.start();
 
 
-    }
-
- */
     @FXML
-    public void Cancel(ActionEvent e){
-        this.server.setGameStarted();
-        this.server = null;
-        this.serverThread.interrupt();
-        this.serverThread = null;
+    public void Cancel(ActionEvent e) throws IOException {
+        this.serverThread.stop();
         this.close();
+        this.previus.show();
+
 
 
     }
-
 
 
 

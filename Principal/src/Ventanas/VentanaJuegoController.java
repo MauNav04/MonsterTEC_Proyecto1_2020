@@ -17,9 +17,7 @@ public class VentanaJuegoController extends WindowsClass implements Initializabl
     @FXML
     public Button butP2;
 
-    public VentanaJuegoController(String FXMLdirectory) {
-        super(FXMLdirectory);
-    }
+
 
     public VentanaJuegoController() {
     }
@@ -30,7 +28,7 @@ public class VentanaJuegoController extends WindowsClass implements Initializabl
         FXMLLoader loader = new FXMLLoader(getClass().getResource("VentanaInfoServerFXML.fxml"));
         Parent root = loader.load();
         VentanaInfoServerController ventanaDeck = loader.getController();
-        ventanaDeck.show(root);
+        ventanaDeck.build(root);
 
 
     }

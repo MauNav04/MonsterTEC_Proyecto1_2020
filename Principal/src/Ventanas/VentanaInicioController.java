@@ -23,18 +23,13 @@ public class VentanaInicioController extends WindowsClass implements Initializab
     public TextField portEntry;
 
 
-
-    public VentanaInicioController(String FXMLdirectory) {
-        super(FXMLdirectory);
-
-    }
-
     public VentanaInicioController(){}
 
 
     @FXML
     public void Unirse(){
-        this.close();
+
+
     }
 
 
@@ -43,7 +38,8 @@ public class VentanaInicioController extends WindowsClass implements Initializab
         FXMLLoader loader = new FXMLLoader(getClass().getResource("VentanaInfoServerFXML.fxml"));
         Parent root = loader.load();
         VentanaInfoServerController ventana = loader.getController();
-        ventana.show(root);
+        ventana.build(root);
+        ventana.setPrevius(this);
         ventana.setServerInfo();
         this.close();
 
