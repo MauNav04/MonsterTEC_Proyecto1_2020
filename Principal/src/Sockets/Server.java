@@ -50,8 +50,9 @@ public class Server {
     }
 
     public void runServer() throws IOException {
-         waitForUsers();
-         startGame();
+        waitForUsers();
+        closeServer();
+         //startGame();
     }
 
     private void startGame() throws IOException {
@@ -181,7 +182,7 @@ public class Server {
 
     private void LISTEN(int port) throws IOException {
         this.listening = true;
-        listener = new RecieverSocket(port);
+        this.listener = new RecieverSocket(port);
         String message = listener.getInfo();
         Decoder decoder = new Decoder();
         Message extractedInfo = decoder.Decode(message);
@@ -264,6 +265,12 @@ public class Server {
 
     public String getServerPort() {
         return serverPort;
+    }
+
+    public void closeServer() throws IOException {
+        this.listener.close();
+        this.listening = false;
+        this.serverPort = null;
     }
 
     public void setGameStarted() {
