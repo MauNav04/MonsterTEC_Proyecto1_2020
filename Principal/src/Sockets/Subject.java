@@ -27,7 +27,7 @@ public class Subject {
     public PlayingCard topDeckCard;
     public Boolean inGame;
     public Boolean end;
-    public int ServersConnectionPort= 2080;
+    public int ServersConnectionPort= 2366;
     private String subjectPort;
     private String subjectIP;
 
