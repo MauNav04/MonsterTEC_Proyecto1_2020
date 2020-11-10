@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="739.0" prefWidth="1237.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Ventanas.VentanaJuegoController" style="-fx-background-color: skyblue;">
+   <children>
+      <Button layoutX="322.0" layoutY="573.0" mnemonicParsing="false" text="previus" style="-fx-background-color: skyblue;"/>
+      <Button layoutX="1129.0" layoutY="573.0" mnemonicParsing="false" text="next" style="-fx-background-color: skyblue;"/>
+      <Button fx:id="c1" layoutX="422.0" layoutY="493.0" mnemonicParsing="false" prefHeight="211.0" prefWidth="135.0" text="Button" onAction="#c1funtion" style="-fx-background-color: #24cd86;"/>
+      <Button fx:id="c2" layoutX="611.0" layoutY="428.0" mnemonicParsing="false" prefHeight="211.0" prefWidth="135.0" text="Button" onAction="#c2funtion" style="-fx-background-color: #24cd86;"/>
+      <Button fx:id="c3" layoutX="786.0" layoutY="356.0" mnemonicParsing="false" prefHeight="211.0" prefWidth="135.0" text="Button" onAction="#c3funtion" style="-fx-background-color: #24cd86;"/>
+      <Button fx:id="c4" layoutX="955.0" layoutY="493.0" mnemonicParsing="false" prefHeight="211.0" prefWidth="135.0" text="Button" onAction="#c4funtion" style="-fx-background-color: #24cd86;"/>
+      <Button fx:id="DECK" layoutX="68.0" layoutY="267.0" mnemonicParsing="false"  prefHeight="211.0" prefWidth="135.0" text="DECK" style="-fx-background-color: #24cd86;"/>
+      <Button layoutX="65.0" layoutY="593.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="167.0" text="Saltar" style="-fx-background-color: #24cd86;"/>
+      <Button layoutX="65.0" layoutY="668.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="167.0" text="Historial" style="-fx-background-color: #24cd86;"/>
+      <Label layoutX="29.0" layoutY="63.0" text="Vida" style="-fx-background-color: skyblue;"/>
+      <Label layoutX="29.0" layoutY="97.0" prefHeight="17.0" prefWidth="39.0" text="Mana" style="-fx-background-color: skyblue;"/>
+      <Label layoutX="1155.0" layoutY="65.0" text="Vida" style="-fx-background-color: skyblue;"/>
+      <Label layoutX="1148.0" layoutY="99.0" prefHeight="17.0" prefWidth="39.0" text="Mana" style="-fx-background-color: skyblue;"/>
+      <Label layoutX="81.0" layoutY="24.0" prefHeight="17.0" prefWidth="65.0" text="Yo" style="-fx-background-color: skyblue;"/>
+      <Label layoutX="1102.0" layoutY="26.0" text="Counter" style="-fx-background-color: skyblue;"/>
+      <Button layoutX="389.0" layoutY="179.0" mnemonicParsing="false" prefHeight="211.0" prefWidth="135.0" text="Mia" style="-fx-background-color: #24cd86;"/>
+      <Button layoutX="733.0" layoutY="80.0" mnemonicParsing="false" prefHeight="211.0" prefWidth="135.0" text="EL" style="-fx-background-color: #24cd86;"/>
+      <Label layoutX="611.0" layoutY="267.0" text="VS" style="-fx-background-color: skyblue;"/>
+      <Label layoutX="551.0" layoutY="24.0" text="Turn" style="-fx-background-color: skyblue;"/>
+      <Label fx:id="YoVi" layoutX="107.0" layoutY="60.0" text="1000" style="-fx-background-color: skyblue;"/>
+      <Label fx:id="YoMa" layoutX="107.0" layoutY="94.0" text="200" style="-fx-background-color: skyblue;"/>
+      <Label fx:id="CVI" layoutX="1051.0" layoutY="69.0" prefHeight="17.0" prefWidth="39.0" text="1000" style="-fx-background-color: skyblue;"/>
+      <Label fx:id="CMA" layoutX="1061.0" layoutY="99.0" text="200" style="-fx-background-color: skyblue;"/>
+      <Label layoutX="159.0" layoutY="60.0" text="\%" style="-fx-background-color: skyblue;"/>
+      <Label layoutX="159.0" layoutY="94.0" text="\%" style="-fx-background-color: skyblue;"/>
+      <Label layoutX="1018.0" layoutY="69.0" text="\%" style="-fx-background-color: skyblue;"/>
+      <Label layoutX="1023.0" layoutY="106.0" text="\%" style="-fx-background-color: skyblue;"/>
+   </children>
+
+</AnchorPane>

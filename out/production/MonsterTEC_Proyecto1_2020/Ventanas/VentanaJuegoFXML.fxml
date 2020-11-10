@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="819.0" prefWidth="1271.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Ventanas.VentanaJuegoController">
+   <children>
+      <Button layoutX="310.0" layoutY="640.0" mnemonicParsing="false" text="previus" />
+      <Button layoutX="1129.0" layoutY="663.0" mnemonicParsing="false" text="next" />
+      <Button layoutX="410.0" layoutY="560.0" mnemonicParsing="false" prefHeight="211.0" prefWidth="135.0" text="Button" />
+      <Button layoutX="599.0" layoutY="495.0" mnemonicParsing="false" prefHeight="211.0" prefWidth="135.0" text="Button" />
+      <Button layoutX="774.0" layoutY="423.0" mnemonicParsing="false" prefHeight="211.0" prefWidth="135.0" text="Button" />
+      <Button layoutX="943.0" layoutY="560.0" mnemonicParsing="false" prefHeight="211.0" prefWidth="135.0" text="Button" />
+      <ProgressBar layoutX="81.0" layoutY="62.0" prefWidth="200.0" progress="0.0" />
+      <ProgressBar layoutX="977.0" layoutY="96.0" prefWidth="200.0" progress="0.0" />
+      <Button layoutX="69.0" layoutY="329.0" mnemonicParsing="false" prefHeight="211.0" prefWidth="135.0" text="DECK" />
+      <Button layoutX="53.0" layoutY="660.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="167.0" text="Saltar" />
+      <Button layoutX="53.0" layoutY="735.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="167.0" text="Historial" />
+      <Label layoutX="29.0" layoutY="63.0" text="Vida" />
+      <Label layoutX="29.0" layoutY="97.0" prefHeight="17.0" prefWidth="39.0" text="Mana" />
+      <ProgressBar layoutX="81.0" layoutY="96.0" prefWidth="200.0" progress="0.0" />
+      <Label layoutX="1199.0" layoutY="63.0" text="Vida" />
+      <Label layoutX="1192.0" layoutY="97.0" prefHeight="17.0" prefWidth="39.0" text="Mana" />
+      <ProgressBar layoutX="977.0" layoutY="62.0" prefWidth="200.0" progress="0.0" />
+      <Label layoutX="81.0" layoutY="24.0" prefHeight="17.0" prefWidth="65.0" text="Yo" />
+      <Label layoutX="1146.0" layoutY="24.0" text="Counter" />
+      <Button layoutX="394.0" layoutY="202.0" mnemonicParsing="false" prefHeight="211.0" prefWidth="135.0" text="Mia" />
+      <Button layoutX="734.0" layoutY="96.0" mnemonicParsing="false" prefHeight="211.0" prefWidth="135.0" text="EL" />
+      <Label layoutX="622.0" layoutY="284.0" text="VS" />
+      <Label layoutX="551.0" layoutY="24.0" text="Turn" />
+   </children>
+
+</AnchorPane>
