@@ -66,11 +66,13 @@ public class VentanaInfoServerController extends WindowsClass implements Initial
     @FXML
     public void Jugar(ActionEvent e) throws IOException {
 
+
         FXMLLoader loader =  new FXMLLoader(getClass().getResource("VentanaJuegoFXML.fxml"));
         Parent root = loader.load();
         VentanaJuegoController ventanajuego = loader.getController();
         ventanajuego.setServer(this.server);
         ventanajuego.build(root);
+        this.close();
         System.out.println("Prueba Herencia");
     }
 
