@@ -113,6 +113,7 @@ public class Server implements Runnable{
                 Message permission = new Message(true,player1.getVida(),player1.getMana());
                 InfoProcessor(permission,player1Port); // OJO _____________________________________________________________
                 this.currentPlayer=false;
+
             }else {
                 Message permission = new Message(true,player2.getVida(),player2.getMana());
                 InfoProcessor(permission,player2Port);
@@ -121,6 +122,10 @@ public class Server implements Runnable{
             LISTEN(Integer.parseInt(serverPort));
 
         }
+    }
+
+    public void PlayerAnswer(){
+
     }
 
     public void startProtocol() throws IOException {
@@ -251,6 +256,26 @@ public class Server implements Runnable{
                     game(info.card);
                 }else if(info.action == "deck"){
                     DECK();
+                }
+                if(info.action.equals("grabCard")){
+                    if(this.currentPlayer = true){
+                        this.player2Deck.pop();
+                        PlayingCard topDeckCard = (PlayingCard) this.player2Deck.peek().getData();
+                        
+                    }
+                    else{
+                        this.player1Deck.pop();
+                        PlayingCard topDeckCard = (PlayingCard) this.player1Deck.peek().getData();
+                    }
+                }
+                if(info.action.equals("jumpTurn")){
+                    if(this.currentPlayer = true){
+                        this.player2Mana = this.player2Mana+25;
+
+                    }
+                    else{
+                        this.player1Mana = this.player1Mana+25;
+                    }
                 }
             }
         }

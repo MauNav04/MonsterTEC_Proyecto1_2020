@@ -249,6 +249,8 @@ public class Subject implements Runnable  {
             String strMessage = encoder.encodeMessage(message);
             int connectToPort = PortToContact(this.ServersConnectionPort);
             SEND(strMessage, connectToPort);
+
+            /*
 =======
         // Si el boton de saltar es presionado
         gameMessage message = new gameMessage("jumpTurn", false);
@@ -269,7 +271,6 @@ public class Subject implements Runnable  {
         int connectToPort = PortToContact(this.ServersConnectionPort);
         SEND(strMessage,connectToPort);
         */
->>>>>>> Stashed changes
 
             this.turn=false;
             this.inGame = true;
