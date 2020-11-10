@@ -4,7 +4,9 @@ import Sockets.Server;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Parent;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 
@@ -62,7 +64,13 @@ public class VentanaInfoServerController extends WindowsClass implements Initial
 
 
     @FXML
-    public void Jugar(ActionEvent e){
+    public void Jugar(ActionEvent e) throws IOException {
+
+        FXMLLoader loader =  new FXMLLoader(getClass().getResource("VentanaJuegoFXML.fxml"));
+        Parent root = loader.load();
+        VentanaJuegoController ventanajuego = loader.getController();
+        ventanajuego.setServer(this.server);
+        ventanajuego.build(root);
         System.out.println("Prueba Herencia");
     }
 
