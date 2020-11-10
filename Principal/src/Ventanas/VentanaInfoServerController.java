@@ -72,6 +72,7 @@ public class VentanaInfoServerController extends WindowsClass implements Initial
         VentanaJuegoController ventanajuego = loader.getController();
         ventanajuego.setServer(this.server);
         ventanajuego.build(root);
+     //   ventanajuego.connect(this.server.getServerIp(),this.server.getServerPort());
         this.close();
         System.out.println("Prueba Herencia");
     }

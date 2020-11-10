@@ -1,6 +1,7 @@
 package Ventanas;
 
 import Sockets.Server;
+import Sockets.Subject;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -16,7 +17,6 @@ import java.net.URL;
 import java.util.ResourceBundle;
 
 public class VentanaInicioController extends WindowsClass implements Initializable{
-    public Server server;
     @FXML
     public Button butP;
     public TextField ipEntry;
@@ -27,7 +27,14 @@ public class VentanaInicioController extends WindowsClass implements Initializab
 
 
     @FXML
-    public void Unirse(){
+    public void Unirse(ActionEvent e) throws IOException {
+
+        FXMLLoader loader =  new FXMLLoader(getClass().getResource("VentanaJuegoFXML.fxml"));
+        Parent root = loader.load();
+        VentanaJuegoController ventanajuego = loader.getController();
+        ventanajuego.build(root);
+        //   ventanajuego.connect(this.server.getServerIp(),this.server.getServerPort());
+        this.close();
 
 
     }

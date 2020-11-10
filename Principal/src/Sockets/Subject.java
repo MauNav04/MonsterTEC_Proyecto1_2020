@@ -28,9 +28,8 @@ public class Subject {
     public Boolean inGame;
     public Boolean end;
 
-    public int ServersConnectionPort= 2366;
 
-   // public int ServersConnectionPort= 2080;
+    public int ServersConnectionPort= 2080;
     public String ServersConnectionIP;
 
     private String subjectPort;
