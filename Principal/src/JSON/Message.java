@@ -14,7 +14,10 @@ public class Message {
     public PlayingCard topDeckCard;
     public int playerLife;
     public int playerMana;
+    public String name;
+    public String type;
     public Boolean end;
+
     //public *** effectThrown; // after card
 
     public Message(){
@@ -50,6 +53,8 @@ public class Message {
         this.action = action;
         this.port = port;
     }
+
+    public Message(Boolean permission, int playerLife, int playerMana){}
 
 
 

@@ -1,5 +1,6 @@
 package Sockets;
 import Estructuras.Pila_stack;
+import GameObjects.Player;
 import GameObjects.PlayingCard;
 import JSON.Decoder;
 import JSON.Encoder;
@@ -13,7 +14,7 @@ import java.util.Collections;
 import java.util.Random;
 
 
-public class Server {
+public class Server implements Runnable{
 
     //Server atributes
     private String serverIp;
@@ -33,6 +34,7 @@ public class Server {
     //private PlayingCard[];
     private int player1Life;
     private int player1Mana;
+    public Player player1;
     private PlayingCard[] player1Hand;
     private Pila_stack player1Deck;
 
@@ -40,16 +42,40 @@ public class Server {
     private String player2Port;
     private int player2Life;
     private int player2Mana;
+    public Player player2;
     private PlayingCard[] player2Hand;
     private Pila_stack player2Deck;
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     public Server() throws IOException {
-        HostServer();
+
    //     runServer();
 
     }
 
     public void runServer() throws IOException {
+    //    HostServer();
         waitForUsers();
         startGame();
     }
@@ -67,11 +93,15 @@ public class Server {
     private void communicationsLoop(Boolean end) throws IOException {
         while(!end){
             System.out.println("Permission Message fails");
-            Message permission = new Message(true);
+
             if(this.currentPlayer == true){
-                InfoProcessor(permission,player1Port);
+                Message permission = new Message(true,player1.getVida(),player1.getMana());
+                InfoProcessor(permission,player1Port); // OJO _____________________________________________________________
+                this.currentPlayer=false;
             }else {
+                Message permission = new Message(true,player2.getVida(),player2.getMana());
                 InfoProcessor(permission,player2Port);
+                this.currentPlayer=true;
             }
             LISTEN(Integer.parseInt(serverPort));
 
@@ -93,8 +123,15 @@ public class Server {
         if(this.currentPlayer == true){
             System.out.println("Initial PLayer: PLayer 1");
         }else{
-            System.out.println("Initial PLayer: PLayer 2");
+            System.out.println("Initial PLayer: PLayer 2");// OJO_________________________________________________________________________________________
         }
+
+        this.player1Life= 1000;
+        this.player1Mana = 200;
+        this.player2Life = 1000;
+        this.player2Mana = 200;
+
+
 
         /*if(this.currentPlayer == true){
             //Message message = new Message("init",this.player1Hand,this.player1Deck[this.player1Deck]) //Mensaje con las cartas
@@ -107,13 +144,9 @@ public class Server {
     }
 
     private Boolean InitialPLayer(){
-        Random randomInstance = new Random();
-        Integer randomPlayer = randomInstance.nextInt((2 - 1) + 1) + 1;
-        String strPlayer = randomPlayer.toString();
-        if(strPlayer.equals("1")){
-            return true;
-        }
-        return false;
+        this.player1 = new Player ("1",  1000,200,true);
+        this.player1 = new Player ("2",  1000,200,false);
+        return true;
     }
 
     private void CardDealer(PlayingCard[] completeDeck, Boolean finishDist){
@@ -199,10 +232,50 @@ public class Server {
             else{
                 this.listening = false;
                 System.out.println("The client answered: " + info);
+                if(info.action == "playCard") {
+                    game(info.card);
+                }else if(info.action == "deck"){
+                    DECK();
+                }
             }
         }
 
     }
+
+    private void DECK(){
+
+
+    }
+
+    private void game(PlayingCard card) {
+        if(this.currentPlayer == true){
+
+            action(player1,card); // OJO _____________________________________________________________
+            cons(player2,card);
+            System.out.println("The client answered: " + card);
+        }else {
+            action(player2,card);
+            cons(player1,card);
+            System.out.println("The client answered: " + card);
+
+        }
+
+    }
+
+    private void action(Player player,PlayingCard card){
+        if (card.type == "A"){
+            player.min_Vida(Integer.parseInt(card.attribute));
+        }
+    }
+
+    private void cons(Player player,PlayingCard card){
+        if (card.type == "A"){
+            player.min_Mana(card.mana);
+        }
+    }
+
+
+
 
     private void AddUser(Message info){
         if(info.action.equals(".newPlayer")){
@@ -254,6 +327,10 @@ public class Server {
 
     public static Server mainServer(String[] args) throws IOException{
         Server server = new Server();
+        server.HostServer();
+        Thread thread = new Thread(server);
+
+        thread.start();
         return server;
     }
 
@@ -274,5 +351,26 @@ public class Server {
 
     public void setGameStarted() {
         this.gameStarted = true;
+    }
+
+    /**
+     * When an object implementing interface {@code Runnable} is used
+     * to create a thread, starting the thread causes the object's
+     * {@code run} method to be called in that separately executing
+     * thread.
+     * <p>
+     * The general contract of the method {@code run} is that it may
+     * take any action whatsoever.
+     *
+     * @see Thread#run()
+     */
+    @Override
+    public void run() {
+        try {
+            runServer();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
     }
 }

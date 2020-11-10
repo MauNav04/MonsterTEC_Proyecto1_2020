@@ -28,12 +28,12 @@ public class VentanaInicioController extends WindowsClass implements Initializab
 
     @FXML
     public void Unirse(ActionEvent e) throws IOException {
-
         FXMLLoader loader =  new FXMLLoader(getClass().getResource("VentanaJuegoFXML.fxml"));
         Parent root = loader.load();
         VentanaJuegoController ventanajuego = loader.getController();
+        Subject subject = Subject.mainSubject(new String[0]);
+        ventanajuego.setSubject(subject);
         ventanajuego.build(root);
-        //   ventanajuego.connect(this.server.getServerIp(),this.server.getServerPort());
         this.close();
 
 
@@ -42,6 +42,7 @@ public class VentanaInicioController extends WindowsClass implements Initializab
 
     @FXML
     public void CrearServer (ActionEvent e) throws IOException {
+
         FXMLLoader loader = new FXMLLoader(getClass().getResource("VentanaInfoServerFXML.fxml"));
         Parent root = loader.load();
         VentanaInfoServerController ventana = loader.getController();

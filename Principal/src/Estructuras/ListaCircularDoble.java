@@ -75,12 +75,12 @@ public class ListaCircularDoble<T> {
      * @param pos
      * @return NodoListaDoble
      */
-    public Nodo<T> getNodo(int pos){
+    public NodoListadoble<T> getNodo(int pos){
         if (pos==0){
             return this.head;
         }
         else{
-            Nodo<T> aux=this.head;
+            NodoListadoble<T> aux=this.head;
             for(int i =0 ; i<pos ;i++){
                 aux = aux.getNext();
             }

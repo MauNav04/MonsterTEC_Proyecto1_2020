@@ -14,8 +14,8 @@ import Estructuras.Nodo;
  */
 public class NodoListadoble<T> extends Nodo<T>{
     private T data;    
-    private Nodo<T> next;
-    private Nodo<T> previus;
+    private NodoListadoble<T> next;
+    private NodoListadoble<T> previus;
     
     /**
      * Constructor del Estructuras.Nodo vacio
@@ -64,7 +64,7 @@ public class NodoListadoble<T> extends Nodo<T>{
      */
 
     @Override
-    public Nodo<T> getNext() {
+    public NodoListadoble<T> getNext() {
         return next;
     }
     
@@ -74,8 +74,8 @@ public class NodoListadoble<T> extends Nodo<T>{
      * @param Next 
      */
     
-    @Override
-    public void setNext(Nodo<T> Next){
+
+    public void setNext(NodoListadoble<T> Next){
             this.next= Next;
            
     }
@@ -83,7 +83,7 @@ public class NodoListadoble<T> extends Nodo<T>{
      * devuelve el nodo anterior
      * @return previus
      */
-    public Nodo<T> getPrevius() {
+    public NodoListadoble<T> getPrevius() {
         return previus;
     }
      /**
@@ -91,8 +91,8 @@ public class NodoListadoble<T> extends Nodo<T>{
      * @param previus
      */
 
-    @Override
-    public void setPrevius(Nodo<T> previus) {
+
+    public void setPrevius(NodoListadoble<T> previus) {
         this.previus = previus;
     }
     

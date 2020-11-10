@@ -48,6 +48,7 @@ public class RecieverSocket {
         } catch(IOException ioe)
             {  System.out.println(ioe);
             }
+
         close();
     }
 
