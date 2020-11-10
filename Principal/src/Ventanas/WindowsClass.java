@@ -9,16 +9,10 @@ import java.io.IOException;
 
 public class WindowsClass {
     protected Stage stage;
-    protected String FXMLdirectory;
-    protected Modality modality;
-    protected boolean EverPriority;
+    protected WindowsClass previus;
 
-    public WindowsClass(String FXMLdirectory) {
-        this.stage = new Stage();
-        this.FXMLdirectory = FXMLdirectory;
-        this.modality = Modality.WINDOW_MODAL;
 
-    }
+
 
     public WindowsClass(){
         this.stage = new Stage();
@@ -29,33 +23,24 @@ public class WindowsClass {
      *
      */
 
-    public void show() throws IOException {
-        FXMLLoader loader = new FXMLLoader();
-        loader.setLocation(getClass().getResource(this.FXMLdirectory));
-        Parent root = loader.load();
-        Scene scene = new Scene(root);
-        // scene.getStylesheets().add(getClass().getResource("Ventana1CSS.css").toExternalForm());
 
-        this.stage.initModality(this.modality);
+    public void build(Parent root) throws IOException {
+        Scene scene = new Scene(root);
+        this.stage = new Stage();
         this.stage.setScene(scene);
-       // this.setStage(stage);
         this.stage.show();
     }
 
-    public boolean isEverPriority() {
-        return EverPriority;
+
+    public void show() throws IOException {
+        this.stage.show();
     }
 
-    public void setEverPriority(boolean everPriority) {
-        EverPriority = everPriority;
-         if(EverPriority==true){
-             this.modality = Modality.APPLICATION_MODAL;
-             this.stage.initModality(this.modality);
-         }
-         else{
-             this.modality = Modality.WINDOW_MODAL;
-             this.stage.initModality(this.modality); }
+    public void setPrevius(WindowsClass win){
+        this.previus = win;
+
     }
+
 
     /**
      * Cierra  la ventana

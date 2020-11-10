@@ -45,7 +45,7 @@ public class Server {
 
     public Server() throws IOException {
         HostServer();
-        runServer();
+   //     runServer();
 
     }
 
@@ -224,7 +224,7 @@ public class Server {
 
     private void HostServer() throws UnknownHostException {
         getIp();
-        getPort();
+        getPort2();
     }
 
     private void getIp() throws UnknownHostException {
@@ -235,7 +235,12 @@ public class Server {
         System.out.println("Current IP: "+ ipNumber);
         this.serverIp = ipNumber;
     }
+    private void getPort2(){
 
+        this.serverPort = "2080";
+
+
+    }
     private void getPort(){
         Random randomInstance = new Random();
         Integer randomPort = randomInstance.nextInt((4000 - 2000) + 1) + 2000;
@@ -247,6 +252,12 @@ public class Server {
     public static void main(String[] args) throws IOException {
         Server server= new Server();
     }
+
+    public static Server mainServer(String[] args) throws IOException{
+        Server server = new Server();
+        return server;
+    }
+
 
     public String getServerIp() {
         return serverIp;

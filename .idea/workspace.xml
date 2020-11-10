@@ -19,7 +19,22 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d7cd4997-d17e-44ee-90df-cbe93889de8f" name="Default Changelist" comment="" />
+    <list default="true" id="7fc40c4e-70cc-453a-ba9d-163690a49012" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Principal/src/Sockets/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/Principal/src/Sockets/Server.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Principal/src/Sockets/Subject.java" beforeDir="false" afterPath="$PROJECT_DIR$/Principal/src/Sockets/Subject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Principal/src/Ventanas/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Principal/src/Ventanas/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Principal/src/Ventanas/VentanaInfoServerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Principal/src/Ventanas/VentanaInfoServerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Principal/src/Ventanas/VentanaInfoServerFXML.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/Principal/src/Ventanas/VentanaInfoServerFXML.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Principal/src/Ventanas/VentanaInicioController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Principal/src/Ventanas/VentanaInicioController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Principal/src/Ventanas/VentanaJuegoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Principal/src/Ventanas/VentanaJuegoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Principal/src/Ventanas/WindowsClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/Principal/src/Ventanas/WindowsClass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MonsterTEC_Proyecto1_2020/Ventanas/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MonsterTEC_Proyecto1_2020/Ventanas/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MonsterTEC_Proyecto1_2020/Ventanas/VentanaInfoServerController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MonsterTEC_Proyecto1_2020/Ventanas/VentanaInfoServerController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MonsterTEC_Proyecto1_2020/Ventanas/VentanaInicioController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MonsterTEC_Proyecto1_2020/Ventanas/VentanaInicioController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MonsterTEC_Proyecto1_2020/Ventanas/VentanaJuegoController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MonsterTEC_Proyecto1_2020/Ventanas/VentanaJuegoController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MonsterTEC_Proyecto1_2020/Ventanas/WindowsClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MonsterTEC_Proyecto1_2020/Ventanas/WindowsClass.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -48,16 +63,52 @@
     <option name="version" value="1" />
   </component>
   <component name="ProjectId" id="1jGFL6W4wucKUcPaRscqedWKIiy" />
+<<<<<<< HEAD
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../StarWarsDemo" />
+=======
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="sortByType" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+>>>>>>> Principal-test
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
+<<<<<<< HEAD
   <component name="RunManager" selected="Application.Server">
     <configuration name="Server" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+=======
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main" type="Application" factoryName="Application" singleton="false" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Ventanas.Main" />
+      <module name="MonsterTEC_Proyecto1_2020" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Ventanas.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Server" type="Application" factoryName="Application" singleton="false" temporary="true" nameIsGenerated="true">
+>>>>>>> Principal-test
       <option name="MAIN_CLASS_NAME" value="Sockets.Server" />
       <module name="MonsterTEC_Proyecto1_2020" />
       <extension name="coverage">
@@ -86,19 +137,29 @@
     <list>
       <item itemvalue="Application.Server" />
       <item itemvalue="Application.Subject" />
+      <item itemvalue="Application.Main" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Subject" />
+        <item itemvalue="Application.Main" />
         <item itemvalue="Application.Server" />
+        <item itemvalue="Application.Subject" />
       </list>
     </recent_temporary>
   </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="false" />
+  <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7fc40c4e-70cc-453a-ba9d-163690a49012" name="Default Changelist" comment="" />
+      <created>1604944730394</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1604944730394</updated>
+      <workItem from="1604944772858" duration="6086000" />
+    </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -109,54 +170,88 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="166" y="0" width="1024" height="722" key="#Project_Structure" timestamp="1603770368408">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="166" y="0" width="1024" height="722" key="#Project_Structure/0.0.1366.728@0.0.1366.728" timestamp="1603770368408" />
-    <state x="141" y="21" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1604685981114">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state x="262" y="31" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1604945856473">
+      <screen x="71" y="0" width="1849" height="1080" />
     </state>
     <state x="141" y="21" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1604685981114" />
+<<<<<<< HEAD
     <state x="466" y="121" width="637" height="478" key="FileChooserDialogImpl" timestamp="1604981345686">
+=======
+    <state x="262" y="31" key="#com.intellij.execution.impl.EditConfigurationsDialog/71.0.1849.1080/-1366.304.1304.768@71.0.1849.1080" timestamp="1604945856473" />
+    <state x="742" y="395" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1604948143566">
+      <screen x="71" y="0" width="1849" height="1080" />
+    </state>
+    <state x="742" y="395" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/71.0.1849.1080/-1366.304.1304.768@71.0.1849.1080" timestamp="1604948143566" />
+    <state x="466" y="121" width="637" height="478" key="FileChooserDialogImpl" timestamp="1604677991369">
+>>>>>>> Principal-test
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="466" y="121" width="637" height="478" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1604981345686" />
     <state x="702" y="180" key="FileChooserDialogImpl/71.0.1849.1080/-1366.304.1304.768@71.0.1849.1080" timestamp="1604629630704" />
+<<<<<<< HEAD
     <state width="1324" height="246" key="GridCell.Tab.0.bottom" timestamp="1604993136766">
       <screen x="0" y="0" width="1366" height="728" />
+=======
+    <state width="1806" height="199" key="GridCell.Tab.0.bottom" timestamp="1604954686635">
+      <screen x="71" y="0" width="1849" height="1080" />
+>>>>>>> Principal-test
     </state>
     <state width="1324" height="246" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1604993136766" />
     <state width="1238" height="264" key="GridCell.Tab.0.bottom/0.0.2646.843@0.0.2646.843" timestamp="1604793182668" />
     <state width="1815" height="295" key="GridCell.Tab.0.bottom/62.0.1858.1080/-1366.304.1304.768@62.0.1858.1080" timestamp="1604378439881" />
+<<<<<<< HEAD
     <state width="1806" height="295" key="GridCell.Tab.0.bottom/71.0.1849.1080/-1366.304.1304.768@71.0.1849.1080" timestamp="1604629938152" />
     <state width="1324" height="246" key="GridCell.Tab.0.center" timestamp="1604993136765">
       <screen x="0" y="0" width="1366" height="728" />
+=======
+    <state width="1806" height="199" key="GridCell.Tab.0.bottom/71.0.1849.1080/-1366.304.1304.768@71.0.1849.1080" timestamp="1604954686635" />
+    <state width="1806" height="199" key="GridCell.Tab.0.center" timestamp="1604954686634">
+      <screen x="71" y="0" width="1849" height="1080" />
+>>>>>>> Principal-test
     </state>
     <state width="1324" height="246" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1604993136765" />
     <state width="1238" height="264" key="GridCell.Tab.0.center/0.0.2646.843@0.0.2646.843" timestamp="1604793182667" />
     <state width="1815" height="295" key="GridCell.Tab.0.center/62.0.1858.1080/-1366.304.1304.768@62.0.1858.1080" timestamp="1604378439881" />
+<<<<<<< HEAD
     <state width="1806" height="295" key="GridCell.Tab.0.center/71.0.1849.1080/-1366.304.1304.768@71.0.1849.1080" timestamp="1604629938151" />
     <state width="1324" height="246" key="GridCell.Tab.0.left" timestamp="1604993136765">
       <screen x="0" y="0" width="1366" height="728" />
+=======
+    <state width="1806" height="199" key="GridCell.Tab.0.center/71.0.1849.1080/-1366.304.1304.768@71.0.1849.1080" timestamp="1604954686634" />
+    <state width="1806" height="199" key="GridCell.Tab.0.left" timestamp="1604954686634">
+      <screen x="71" y="0" width="1849" height="1080" />
+>>>>>>> Principal-test
     </state>
     <state width="1324" height="246" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1604993136765" />
     <state width="1238" height="264" key="GridCell.Tab.0.left/0.0.2646.843@0.0.2646.843" timestamp="1604793182667" />
     <state width="1815" height="295" key="GridCell.Tab.0.left/62.0.1858.1080/-1366.304.1304.768@62.0.1858.1080" timestamp="1604378439881" />
+<<<<<<< HEAD
     <state width="1806" height="295" key="GridCell.Tab.0.left/71.0.1849.1080/-1366.304.1304.768@71.0.1849.1080" timestamp="1604629938151" />
     <state width="1324" height="246" key="GridCell.Tab.0.right" timestamp="1604993136766">
       <screen x="0" y="0" width="1366" height="728" />
+=======
+    <state width="1806" height="199" key="GridCell.Tab.0.left/71.0.1849.1080/-1366.304.1304.768@71.0.1849.1080" timestamp="1604954686634" />
+    <state width="1806" height="199" key="GridCell.Tab.0.right" timestamp="1604954686634">
+      <screen x="71" y="0" width="1849" height="1080" />
+>>>>>>> Principal-test
     </state>
     <state width="1324" height="246" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1604993136766" />
     <state width="1238" height="264" key="GridCell.Tab.0.right/0.0.2646.843@0.0.2646.843" timestamp="1604793182668" />
     <state width="1815" height="295" key="GridCell.Tab.0.right/62.0.1858.1080/-1366.304.1304.768@62.0.1858.1080" timestamp="1604378439881" />
+<<<<<<< HEAD
     <state width="1806" height="295" key="GridCell.Tab.0.right/71.0.1849.1080/-1366.304.1304.768@71.0.1849.1080" timestamp="1604629938151" />
     <state width="1324" height="217" key="GridCell.Tab.1.bottom" timestamp="1604897594932">
       <screen x="0" y="0" width="1366" height="728" />
@@ -174,15 +269,19 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1324" height="217" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1604897594932" />
+=======
+    <state width="1806" height="199" key="GridCell.Tab.0.right/71.0.1849.1080/-1366.304.1304.768@71.0.1849.1080" timestamp="1604954686634" />
+>>>>>>> Principal-test
     <state x="166" y="0" width="1024" height="722" key="SettingsEditor" timestamp="1604678001993">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="166" y="0" width="1024" height="722" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1604678001993" />
     <state x="296" y="0" key="SettingsEditor/71.0.1849.1080/-1366.304.1304.768@71.0.1849.1080" timestamp="1604629694954" />
-    <state x="687" y="363" key="com.intellij.ide.util.TipDialog" timestamp="1604378607760">
-      <screen x="62" y="0" width="1858" height="1080" />
+    <state x="693" y="363" key="com.intellij.ide.util.TipDialog" timestamp="1604945767293">
+      <screen x="71" y="0" width="1849" height="1080" />
     </state>
     <state x="687" y="363" key="com.intellij.ide.util.TipDialog/62.0.1858.1080/-1366.304.1304.768@62.0.1858.1080" timestamp="1604378607760" />
+    <state x="693" y="363" key="com.intellij.ide.util.TipDialog/71.0.1849.1080/-1366.304.1304.768@71.0.1849.1080" timestamp="1604945767293" />
     <state x="99" y="0" width="1157" height="722" key="new project wizard" timestamp="1603422502006">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
