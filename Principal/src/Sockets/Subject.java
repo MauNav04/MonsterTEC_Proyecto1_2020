@@ -10,6 +10,7 @@ import JSON.Message;
 import JSON.gameMessage;
 import Ventanas.VentanaJuegoController;
 import com.fasterxml.jackson.core.JsonProcessingException;
+import javafx.scene.control.Alert;
 
 import java.io.IOException;
 import java.net.InetAddress;
@@ -44,6 +45,18 @@ public class Subject implements Runnable  {
 
 
     public int ServersConnectionPort= 2080;
+
+    public void setC1(NodoListadoble<PlayingCard> c1) {
+        this.c1 = c1;
+    }
+
+    public void setServersConnectionPort(int serversConnectionPort) {
+        ServersConnectionPort = serversConnectionPort;
+    }
+
+    public void setServersConnectionIP(String serversConnectionIP) {
+        ServersConnectionIP = serversConnectionIP;
+    }
 
     public String ServersConnectionIP = "10.0.0.3";
 
@@ -143,11 +156,14 @@ public class Subject implements Runnable  {
 
         }
         this.Hand= listaH;
+
+    }
+
+    public void set(){
         this.c1 = this.Hand.getNodo(0);
         this.c2= this.Hand.getNodo(1);
         this.c3= this.Hand.getNodo(2);
         this.c4= this.Hand.getNodo(3);
-
     }
 
     public void Next(){
@@ -165,16 +181,22 @@ public class Subject implements Runnable  {
 
     public void send_c1()throws IOException{
         sentCart(c1.getData());
+        this.Hand.remove(c1.getData());
     }
     public void send_c2()throws IOException{
         sentCart(c2.getData());
+        this.Hand.remove(c2.getData());
     }
     public void send_c3() throws IOException {
         sentCart(c3.getData());
+        this.Hand.remove(c3.getData());
     }
     public void send_c4()throws IOException{
         sentCart(c4.getData());
+        this.Hand.remove(c4.getData());
     }
+
+
 
     private void InfoUpdate(Message infoFromServer) throws JsonProcessingException { //message structure "50,80" - "Life-Mana" (order)
         if(!inGame){  // Acomoda la info inicial
@@ -189,6 +211,8 @@ public class Subject implements Runnable  {
             }
         }
     }
+
+
 
     private void waitForAction() throws JsonProcessingException {
         /*
@@ -226,20 +250,52 @@ public class Subject implements Runnable  {
     }
     public void sentCart(PlayingCard card) throws IOException {
         if(turn==true){
+
             gameMessage message = new gameMessage("playCard", card, false);
             Encoder encoder = new Encoder();
             String strMessage = encoder.encodeMessage(message);
             int connectToPort = PortToContact(this.ServersConnectionPort);
             SEND(strMessage, connectToPort);
-
-
-
-
+            this.set();
+            this.windows.actualizarCs();
             this.turn=false;
             this.inGame = true;
             this.startGame();
         }
+    }
 
+    public void DECK() throws IOException {
+        if(turn==true && this.Hand.getLen()<10) {
+            gameMessage message = new gameMessage("grabCard", false);
+            this.Hand.addFirst(this.topDeckCard);
+            Encoder encoder = new Encoder();
+            String strMessage = encoder.encodeMessage(message);
+            int connectToPort = PortToContact(this.ServersConnectionPort);
+            SEND(strMessage, connectToPort);
+            this.turn=false;
+            this.inGame = true;
+            this.startGame();
+        }else{
+            Alert alert = new Alert(Alert.AlertType.INFORMATION);
+            alert.setTitle("Information Dialog");
+            alert.setHeaderText(null);
+            alert.setContentText("Ya tienes mas de 10 cartas en la mano!");
+            alert.showAndWait();
+        }
+    }
+
+
+    public void saltar() throws IOException {
+        if(turn==true) {
+            gameMessage message = new gameMessage("jumpTurn", false);
+            Encoder encoder = new Encoder();
+            String strMessage = encoder.encodeMessage(message);
+            int connectToPort = PortToContact(this.ServersConnectionPort);
+            SEND(strMessage, connectToPort);
+            this.turn = false;
+            this.inGame = true;
+            this.startGame();
+        }
     }
 
     private void getIp() throws UnknownHostException {
@@ -268,12 +324,22 @@ public class Subject implements Runnable  {
         Thread thread = new Thread(talker);
         thread.start();
     }
+    public static Subject mainSubject(String[] strings,String Ip , int port) throws IOException {
+        Subject talker = new Subject();
+        talker.setServersConnectionIP(Ip);
+        talker.setServersConnectionPort(port);
+        Thread thread = new Thread(talker);
+        thread.start();
+        return talker;
+    }
+
     public static Subject mainSubject(String[] strings) throws IOException {
         Subject talker = new Subject();
         Thread thread = new Thread(talker);
         thread.start();
         return talker;
     }
+
 
     /**
      * When an object implementing interface {@code Runnable} is used

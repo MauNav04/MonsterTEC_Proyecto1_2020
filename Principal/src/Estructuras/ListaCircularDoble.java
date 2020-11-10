@@ -238,8 +238,30 @@ public class ListaCircularDoble<T> {
           aux.getNext().setPrevius(aux.getPrevius());
           len--; 
         }configure();
-    }  
 
+
+
+
+
+
+    }
+
+    public void remove(T dato){
+        NodoListadoble aux = new NodoListadoble();
+        int n=0;
+        while (aux.getData()!=dato && n!=this.len){
+            aux = aux.getNext();
+            n++;
+        }
+        if (aux.getData()==dato){
+            NodoListadoble uxN= aux.getNext();
+            uxN.setPrevius(aux.getPrevius());
+            aux.getPrevius().setNext(uxN);
+
+
+        }
+
+    }
     
     
 }

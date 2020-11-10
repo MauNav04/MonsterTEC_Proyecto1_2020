@@ -21,6 +21,10 @@ public class VentanaJuegoController extends WindowsClass implements Initializabl
     public Subject subject;
     @FXML
     public Button DECK;
+    public Button c1;
+    public Button c2;
+    public Button c3;
+    public Button c4;
     public ProgressBar CV;
     public ProgressBar CM;
     public ProgressBar YoV;
@@ -37,7 +41,7 @@ public class VentanaJuegoController extends WindowsClass implements Initializabl
 
 
     @FXML
-    public void DECKfuntion(ActionEvent e) throws IOException {
+    public void c1funtion(ActionEvent e) throws IOException {
         System.out.println("Jauandivbfdbvjbsdjf");
         if(subject.isTurn()){
             subject.send_c1();
@@ -46,9 +50,51 @@ public class VentanaJuegoController extends WindowsClass implements Initializabl
     }
 
 
+    @FXML
+    public void c2funtion(ActionEvent e) throws IOException {
+        System.out.println("Jauandivbfdbvjbsdjf");
+        if(subject.isTurn()){
+            subject.send_c2();
+        }
+
+    }
+
+    @FXML
+    public void c3funtion(ActionEvent e) throws IOException {
+        System.out.println("Jauandivbfdbvjbsdjf");
+        if(subject.isTurn()){
+            subject.send_c3();
+        }
+
+    }
+
+    @FXML
+    public void c4funtion(ActionEvent e) throws IOException {
+        System.out.println("Jauandivbfdbvjbsdjf");
+        if(subject.isTurn()){
+            subject.send_c4();
+        }
+
+    }
 
 
+    @FXML
+    public void nextfuntion(){
+        this.subject.Next();
 
+    }
+
+    @FXML
+    public void previusfuntion(){
+        this.subject.Previus();
+    }
+
+    public void actualizarCs(){
+        this.c1.setText(this.subject.c1.getData().type+"\n"+this.subject.c1.getData().attribute+"\n"+this.subject.c1.getData().type);
+        this.c2.setText(this.subject.c2.getData().type+"\n"+this.subject.c1.getData().attribute+"\n"+this.subject.c1.getData().type);
+        this.c3.setText(this.subject.c3.getData().type+"\n"+this.subject.c1.getData().attribute+"\n"+this.subject.c1.getData().type);
+        this.c4.setText(this.subject.c4.getData().type+"\n"+this.subject.c1.getData().attribute+"\n"+this.subject.c1.getData().type);
+    }
 
 
 
@@ -71,5 +117,10 @@ public class VentanaJuegoController extends WindowsClass implements Initializabl
     public void actualizar(int playerLife, int playerMana) {
         this.YoVi.setText(String.valueOf(playerLife));
         this.YoMa.setText(String.valueOf(playerMana));
+    }
+
+    public void actualizarEnemi(int playerLife, int playerMana) {
+        this.CVI.setText(String.valueOf(playerLife));
+        this.CMA.setText(String.valueOf(playerMana));
     }
 }

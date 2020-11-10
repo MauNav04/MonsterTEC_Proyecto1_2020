@@ -25,7 +25,8 @@ public class VentanaInfoServerController extends WindowsClass implements Initial
 
 
 
-    public VentanaInfoServerController() {
+    public VentanaInfoServerController(){
+
     }
     ///_________________________________________________________________________________________________________________
 

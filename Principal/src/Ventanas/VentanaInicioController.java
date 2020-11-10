@@ -31,7 +31,7 @@ public class VentanaInicioController extends WindowsClass implements Initializab
         FXMLLoader loader =  new FXMLLoader(getClass().getResource("VentanaJuegoFXML.fxml"));
         Parent root = loader.load();
         VentanaJuegoController ventanajuego = loader.getController();
-        Subject subject = Subject.mainSubject(new String[0]);
+        Subject subject = Subject.mainSubject(new String[0],this.ipEntry.getText(),Integer.parseInt(this.portEntry.getText()));
         ventanajuego.setSubject(subject);
         ventanajuego.build(root);
         this.close();
