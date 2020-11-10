@@ -181,17 +181,35 @@ public class Subject implements Runnable  {
             SetInitialInfo(infoFromServer);
         }else{
             if(infoFromServer.permission.equals(true)){ // El usuario puede jugar
+<<<<<<< Updated upstream
                 
                 this.windows.actualizar(infoFromServer.playerLife,infoFromServer.playerMana);
                 this.turn = true;//no tocar
                 this.inGame = false;//no tocar
 
             }
+=======
+                //waitForAction();
+            }/*
+            else {
+                this.end = true;
+                if (infoFromServer.action.equals("manaUpdate")) {
+                    this.mana = infoFromServer.playerMana;
+                }else{
+                    if(infoFromServer.equals("topDeckCardUpdate")){
+
+                    }
+                }else{
+                    if ()
+                }
+            }*/
+>>>>>>> Stashed changes
         }
     }
 
     private void waitForAction() throws JsonProcessingException {
         /*
+<<<<<<< Updated upstream
         if(true) {
             // Si el boton de saltar es presionado
             gameMessage message = new gameMessage("jumpTurn", false);
@@ -231,9 +249,27 @@ public class Subject implements Runnable  {
             String strMessage = encoder.encodeMessage(message);
             int connectToPort = PortToContact(this.ServersConnectionPort);
             SEND(strMessage, connectToPort);
+=======
+        // Si el boton de saltar es presionado
+        gameMessage message = new gameMessage("jumpTurn", false);
+        Encoder encoder = new Encoder();
+        String strMessage = encoder.encodeMessage(message);
+        int connectToPort = PortToContact(this.ServersConnectionPort);
+        SEND(strMessage,connectToPort);
+>>>>>>> Stashed changes
 
 
+<<<<<<< Updated upstream
 
+=======
+        // Si el boton de una carta es presionado
+        gameMessage message = new gameMessage("playCard", this.cardPlayed,false);
+        Encoder encoder = new Encoder();
+        String strMessage = encoder.encodeMessage(message);
+        int connectToPort = PortToContact(this.ServersConnectionPort);
+        SEND(strMessage,connectToPort);
+        */
+>>>>>>> Stashed changes
 
             this.turn=false;
             this.inGame = true;

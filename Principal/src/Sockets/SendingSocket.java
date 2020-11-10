@@ -11,11 +11,12 @@ public class SendingSocket {
     private DataInputStream console   = null;
     private DataOutputStream streamOut = null;
 
+
     /**
-     * Constructor de Sockets.ChatClient que crea conexión con el servidor y le envía un mensaje.
-     * @param ip ip del host del servidor
-     * @param serverPort en el que escucha el servidor
-     * @param message mensaje que se queire enviar al servidor
+     * SendingSocker: is a constructor of a socket that sends info to an specific ip and port
+     * @param ip
+     * @param serverPort
+     * @param message
      */
     public SendingSocket(String ip, int serverPort, String message)
     {  System.out.println("Establishing connection. Please wait ...");
@@ -58,6 +59,9 @@ public class SendingSocket {
         streamOut = new DataOutputStream(socket.getOutputStream());
     }
 
+    /**
+     * Stops de sending and cleans de streamOut variable, catches an IOExceotion
+     */
     public void stop()
     {  try
     {  if (console   != null)  console.close();

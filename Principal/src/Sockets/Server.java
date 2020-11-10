@@ -46,6 +46,7 @@ public class Server implements Runnable{
     private PlayingCard[] player2Hand;
     private Pila_stack player2Deck;
 
+<<<<<<< Updated upstream
 
 
 
@@ -68,18 +69,32 @@ public class Server implements Runnable{
 
 
 
+=======
+    /**
+     * Sever is the main class
+     * @throws IOException
+     */
+>>>>>>> Stashed changes
     public Server() throws IOException {
 
    //     runServer();
 
     }
 
+    /**
+     * Run server is the methos that waiths for users and start the game
+     * @throws IOException
+     */
     public void runServer() throws IOException {
     //    HostServer();
         waitForUsers();
         startGame();
     }
 
+    /**
+     * Start game
+     * @throws IOException
+     */
     private void startGame() throws IOException {
         System.out.println("Game starts NOW!! - Server");
         startProtocol();

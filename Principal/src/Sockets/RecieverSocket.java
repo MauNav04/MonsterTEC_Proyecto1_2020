@@ -14,9 +14,10 @@ public class RecieverSocket {
     String clientsPort = null;
 
     /**
-     * Constructor de Sockets.ChatServer, escucha en un puerto determinado hasta iniciar una conexión con un socket y recibir información del mismo.
-     * Luego termina la conexión
-     * @param port Puerto en el que escuchara el Servidor
+     * Reciever Socket: Es el constructor de un socket que se conecta a un puerto preestablecido, escucha en este
+     * puerto y cuando alguien se conecta, obtiene la info del mismo.
+     * @param port
+     * @throws IOException
      */
     public RecieverSocket(int port) throws IOException {
         boolean done = false;
@@ -52,6 +53,10 @@ public class RecieverSocket {
         close();
     }
 
+    /**
+     * Método publico que obtiene la información recibida al Socket y la envia a otras clases
+     * @return String message
+     */
     public String getInfo (){
         return message;
     }
@@ -75,6 +80,10 @@ public class RecieverSocket {
         System.out.println("Cleaning ...");
     }
 
+    /**
+     * Termina de escuchar y cierra el server
+     * @throws IOException
+     */
     public void close() throws IOException
     {   socket.close();
         streamIn.close();
