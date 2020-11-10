@@ -51,8 +51,7 @@ public class Server {
 
     public void runServer() throws IOException {
         waitForUsers();
-        closeServer();
-         //startGame();
+        startGame();
     }
 
     private void startGame() throws IOException {
@@ -75,7 +74,6 @@ public class Server {
                 InfoProcessor(permission,player2Port);
             }
             LISTEN(Integer.parseInt(serverPort));
-
 
         }
     }
@@ -251,6 +249,7 @@ public class Server {
 
     public static void main(String[] args) throws IOException {
         Server server= new Server();
+        server.runServer();
     }
 
     public static Server mainServer(String[] args) throws IOException{

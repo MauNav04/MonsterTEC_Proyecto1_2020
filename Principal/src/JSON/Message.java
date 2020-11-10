@@ -25,7 +25,7 @@ public class Message {
         this.permission = permission;
     }
 
-    public Message(String action, Boolean Deck, int amountDeckCards, PlayingCard topDeckCard, int playerLife, int playerMana) {
+    /*public Message(String action, Boolean Deck, int amountDeckCards, PlayingCard topDeckCard, int playerLife, int playerMana) {
         this.action = action;
         this.Deck = Deck;
         this.amountDeckCards = amountDeckCards;
@@ -38,7 +38,7 @@ public class Message {
         this.action = action;
         this.card = card;
         this.end = end;
-    }
+    }*/
 
     public Message(String action, PlayingCard[] firstHand, PlayingCard topDeckCard){
         this.action = action;

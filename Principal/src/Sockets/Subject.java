@@ -5,6 +5,7 @@ import JSON.Decoder;
 import JSON.Encoder;
 import JSON.Message;
 
+import JSON.gameMessage;
 import com.fasterxml.jackson.core.JsonProcessingException;
 
 import java.io.IOException;
@@ -23,13 +24,16 @@ public class Subject {
     public boolean actionControl = false;// false recibir - true enviar
     public int life = 0;
     public int mana = 0;
-    public String[] hand = new String[10];
+    public boolean isDeck;
+    public PlayingCard[] hand = new PlayingCard[10];
     public PlayingCard topDeckCard;
-    public Boolean inGame;
+    public Boolean inGame =  false;
+    public PlayingCard cardPlayed;
     public Boolean end;
 
 
     public int ServersConnectionPort= 2080;
+
     public String ServersConnectionIP;
 
     private String subjectPort;
@@ -129,17 +133,53 @@ public class Subject {
         getPort();
     }
 
-    private void InfoUpdate(Message infoFromServer){ //message structure "50,80" - "Life-Mana" (order)
-        if(!inGame){
+    private void SetInitialInfo(Message initialInfo){
+        this.hand = initialInfo.firstHand;
+        this.topDeckCard = initialInfo.topDeckCard;
+        this.mana = 50;
+        this.life = 100;
+        this.isDeck = true;
+        this.inGame = true;
+    }
 
+    private void InfoUpdate(Message infoFromServer) throws JsonProcessingException { //message structure "50,80" - "Life-Mana" (order)
+        if(!inGame){  // Acomoda la info inicial
+            SetInitialInfo(infoFromServer);
+        }else{
+            if(infoFromServer.permission.equals(true)){ // El usuario puede jugar
+                waitForAction();
+            }
+        }
+    }
+
+    private void waitForAction() throws JsonProcessingException {
+        if(true) {
+            // Si el boton de saltar es presionado
+            gameMessage message = new gameMessage("jumpTurn", false);
+            Encoder encoder = new Encoder();
+            String strMessage = encoder.encodeMessage(message);
+            int connectToPort = PortToContact(this.ServersConnectionPort);
+            SEND(strMessage, connectToPort);
+        }
+        if(true) {
+            // Si el boton de deck es presionado
+            gameMessage message = new gameMessage("grabCard", false);
+            this.hand[5] = this.topDeckCard;
+            Encoder encoder = new Encoder();
+            String strMessage = encoder.encodeMessage(message);
+            int connectToPort = PortToContact(this.ServersConnectionPort);
+            SEND(strMessage, connectToPort);
         }
 
-        /*int getLife = Integer.parseInt(splitted[0]);
-        int getMana = Integer.parseInt(splitted[1]);
-        this.life = getLife;
-        this.mana = getMana;
-        System.out.println(life);
-        System.out.println(mana);*/
+        if(true) {
+            // Si el boton de una carta es presionado
+            gameMessage message = new gameMessage("playCard", this.cardPlayed, false);
+            Encoder encoder = new Encoder();
+            String strMessage = encoder.encodeMessage(message);
+            int connectToPort = PortToContact(this.ServersConnectionPort);
+            SEND(strMessage, connectToPort);
+        }
+
     }
 
     private void getIp() throws UnknownHostException {
