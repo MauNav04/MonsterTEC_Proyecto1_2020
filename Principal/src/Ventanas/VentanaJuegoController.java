@@ -1,6 +1,7 @@
 package Ventanas;
 
 
+import Sockets.Server;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -40,5 +41,9 @@ public class VentanaJuegoController extends WindowsClass implements Initializabl
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
 
+    }
+
+    public void setServer(Server server) {
+ 
     }
 }
