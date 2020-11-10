@@ -14,7 +14,7 @@ import java.net.URL;
 import java.util.ResourceBundle;
 
 public class VentanaJuegoController extends WindowsClass implements Initializable {
-
+    public Server server;
     @FXML
     public Button butP2;
 
@@ -36,14 +36,15 @@ public class VentanaJuegoController extends WindowsClass implements Initializabl
 
 
 
+    public void setServer(Server server) {
+        this.server = server;
 
+    }
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
 
     }
 
-    public void setServer(Server server) {
- 
-    }
+
 }
