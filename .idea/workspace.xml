@@ -1,73 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7c4ca2b5-2077-4da5-8b0e-3fda9c01399a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Sockets/Sockets.iml" beforeDir="false" />
+    <list default="true" id="eb71afb5-ca53-46e1-8035-098aef099b8a" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/MonsterTEC_Proyecto1_2020.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/MonsterTEC_Proyecto1_2020.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Principal/src/Sockets/Subject.java" beforeDir="false" afterPath="$PROJECT_DIR$/Principal/src/Sockets/Subject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Principal/src/Ventanas/VentanaInfoServerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Principal/src/Ventanas/VentanaInfoServerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Principal/src/Ventanas/VentanaJuegoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Principal/src/Ventanas/VentanaJuegoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MonsterTEC_Proyecto1_2020/Sockets/Server.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MonsterTEC_Proyecto1_2020/Sockets/Server.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MonsterTEC_Proyecto1_2020/Sockets/Subject.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MonsterTEC_Proyecto1_2020/Sockets/Subject.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MonsterTEC_Proyecto1_2020/Ventanas/VentanaInfoServerController$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MonsterTEC_Proyecto1_2020/Ventanas/VentanaInfoServerController$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MonsterTEC_Proyecto1_2020/Ventanas/VentanaInfoServerController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MonsterTEC_Proyecto1_2020/Ventanas/VentanaInfoServerController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MonsterTEC_Proyecto1_2020/Ventanas/VentanaJuegoController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MonsterTEC_Proyecto1_2020/Ventanas/VentanaJuegoController.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="ProjectId" id="1jGFL6W4wucKUcPaRscqedWKIiy" />
-  <component name="ProjectViewState">
-    <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showLibraryContents" value="true" />
-  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.13476562" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="preferences.pathVariables" />
   </component>
-  <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
-    </key>
-  </component>
-<<<<<<< Updated upstream
-  <component name="RunManager" selected="Application.Subject">
-=======
   <component name="RunManager" selected="Application.Server">
-    <configuration name="Decoder" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="JSON.Decoder" />
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Ventanas.Main" />
       <module name="MonsterTEC_Proyecto1_2020" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="JSON.*" />
+          <option name="PATTERN" value="Ventanas.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Encoder" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="JSON.Encoder" />
-      <module name="MonsterTEC_Proyecto1_2020" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="JSON.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
->>>>>>> Stashed changes
-    <configuration name="SendingSocket" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="SendingSocket" />
-      <module name="MonsterTEC_Proyecto1_2020" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -79,123 +49,125 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Subject" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Subject" />
-      <module name="MonsterTEC_Proyecto1_2020" />
+    <configuration default="true" type="JetRunConfigurationType">
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <module name="" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <module name="" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.Subject" />
-      <item itemvalue="Application.SendingSocket" />
+      <item itemvalue="Application.Main" />
       <item itemvalue="Application.Server" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Server" />
-<<<<<<< Updated upstream
-=======
-        <item itemvalue="Application.Subject" />
-        <item itemvalue="Application.Decoder" />
-        <item itemvalue="Application.Encoder" />
->>>>>>> Stashed changes
-        <item itemvalue="Application.SendingSocket" />
+        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
-  <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
-    <task active="true" id="Default" summary="Default task">
-      <changelist id="7c4ca2b5-2077-4da5-8b0e-3fda9c01399a" name="Default Changelist" comment="" />
-      <created>1603422462645</created>
-      <option name="number" value="Default" />
-      <option name="presentableId" value="Default" />
-      <updated>1603422462645</updated>
-    </task>
     <servers />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="WindowStateProjectService">
-    <state x="166" y="0" width="1024" height="722" key="#Project_Structure" timestamp="1603770368408">
+    <state x="593" y="74" width="424" height="569" key="FileChooserDialogImpl" timestamp="1605045218589">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="166" y="0" width="1024" height="722" key="#Project_Structure/0.0.1366.728@0.0.1366.728" timestamp="1603770368408" />
-    <state x="449" y="194" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1604607765219">
+    <state x="593" y="74" width="424" height="569" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1605045218589" />
+    <state width="1806" height="199" key="GridCell.Tab.0.bottom" timestamp="1605000151090">
       <screen x="71" y="0" width="1849" height="1080" />
     </state>
-    <state x="449" y="194" key="#com.intellij.execution.impl.EditConfigurationsDialog/71.0.1849.1080/-1366.304.1304.768@71.0.1849.1080" timestamp="1604607765219" />
-    <state x="466" y="121" width="424" height="478" key="FileChooserDialogImpl" timestamp="1603429691568">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="466" y="121" width="424" height="478" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1603429691568" />
-<<<<<<< Updated upstream
-    <state width="1815" height="295" key="GridCell.Tab.0.bottom" timestamp="1604378439881">
-      <screen x="62" y="0" width="1858" height="1080" />
-    </state>
-    <state width="1324" height="174" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1603843036125" />
-    <state width="1815" height="295" key="GridCell.Tab.0.bottom/62.0.1858.1080/-1366.304.1304.768@62.0.1858.1080" timestamp="1604378439881" />
-    <state width="1815" height="295" key="GridCell.Tab.0.center" timestamp="1604378439881">
-      <screen x="62" y="0" width="1858" height="1080" />
-    </state>
-    <state width="1324" height="174" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1603843036124" />
-    <state width="1815" height="295" key="GridCell.Tab.0.center/62.0.1858.1080/-1366.304.1304.768@62.0.1858.1080" timestamp="1604378439881" />
-    <state width="1815" height="295" key="GridCell.Tab.0.left" timestamp="1604378439881">
-      <screen x="62" y="0" width="1858" height="1080" />
-    </state>
-    <state width="1324" height="174" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1603843036123" />
-    <state width="1815" height="295" key="GridCell.Tab.0.left/62.0.1858.1080/-1366.304.1304.768@62.0.1858.1080" timestamp="1604378439881" />
-    <state width="1815" height="295" key="GridCell.Tab.0.right" timestamp="1604378439881">
-      <screen x="62" y="0" width="1858" height="1080" />
-    </state>
-    <state width="1324" height="174" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1603843036125" />
-    <state width="1815" height="295" key="GridCell.Tab.0.right/62.0.1858.1080/-1366.304.1304.768@62.0.1858.1080" timestamp="1604378439881" />
-    <state x="296" y="0" width="1024" height="722" key="SettingsEditor" timestamp="1604607838466">
+    <state width="1806" height="199" key="GridCell.Tab.0.bottom/71.0.1849.1080/-1366.304.1304.768@71.0.1849.1080" timestamp="1605000151090" />
+    <state width="1806" height="199" key="GridCell.Tab.0.center" timestamp="1605000151090">
       <screen x="71" y="0" width="1849" height="1080" />
     </state>
-    <state x="166" y="0" width="1024" height="722" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1603770472181" />
-    <state x="296" y="0" key="SettingsEditor/71.0.1849.1080/-1366.304.1304.768@71.0.1849.1080" timestamp="1604607838466" />
-    <state x="687" y="363" key="com.intellij.ide.util.TipDialog" timestamp="1604378607760">
-      <screen x="62" y="0" width="1858" height="1080" />
+    <state width="1806" height="199" key="GridCell.Tab.0.center/71.0.1849.1080/-1366.304.1304.768@71.0.1849.1080" timestamp="1605000151090" />
+    <state width="1806" height="199" key="GridCell.Tab.0.left" timestamp="1605000151090">
+      <screen x="71" y="0" width="1849" height="1080" />
     </state>
-    <state x="687" y="363" key="com.intellij.ide.util.TipDialog/62.0.1858.1080/-1366.304.1304.768@62.0.1858.1080" timestamp="1604378607760" />
-=======
-    <state x="466" y="223" width="637" height="505" key="FileChooserDialogImpl/0.104.1366.768/1366.0.1280.1024@0.104.1366.768" timestamp="1604079882052" />
-    <state width="1324" height="264" key="GridCell.Tab.0.bottom" timestamp="1604655175331">
+    <state width="1806" height="199" key="GridCell.Tab.0.left/71.0.1849.1080/-1366.304.1304.768@71.0.1849.1080" timestamp="1605000151090" />
+    <state width="1806" height="199" key="GridCell.Tab.0.right" timestamp="1605000151090">
+      <screen x="71" y="0" width="1849" height="1080" />
+    </state>
+    <state width="1806" height="199" key="GridCell.Tab.0.right/71.0.1849.1080/-1366.304.1304.768@71.0.1849.1080" timestamp="1605000151090" />
+    <state x="448" y="110" width="713" height="497" key="NewModule_or_Project.wizard" timestamp="1605045188163">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1324" height="264" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1604655175331" />
-    <state width="1324" height="265" key="GridCell.Tab.0.bottom/0.0.2646.843@0.0.2646.843" timestamp="1604383688665" />
-    <state width="1324" height="174" key="GridCell.Tab.0.bottom/0.104.1366.768/1366.0.1280.1024@0.104.1366.768" timestamp="1604005900037" />
-    <state width="1324" height="264" key="GridCell.Tab.0.center" timestamp="1604655175330">
+    <state x="448" y="110" width="713" height="497" key="NewModule_or_Project.wizard/0.0.1366.728@0.0.1366.728" timestamp="1605045188163" />
+    <state x="298" y="0" width="1024" height="724" key="SettingsEditor" timestamp="1605045222526">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1324" height="264" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1604655175330" />
-    <state width="1324" height="265" key="GridCell.Tab.0.center/0.0.2646.843@0.0.2646.843" timestamp="1604383688662" />
-    <state width="1324" height="174" key="GridCell.Tab.0.center/0.104.1366.768/1366.0.1280.1024@0.104.1366.768" timestamp="1604005900035" />
-    <state width="1324" height="264" key="GridCell.Tab.0.left" timestamp="1604655175330">
+    <state x="298" y="0" width="1024" height="724" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1605045222526" />
+    <state x="475" y="114" key="SettingsEditor/71.0.1849.1080/-1366.304.1304.768@71.0.1849.1080" timestamp="1604999814594" />
+    <state x="199" y="0" width="1157" height="722" key="new project wizard" timestamp="1605045166009">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1324" height="264" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1604655175330" />
-    <state width="1324" height="265" key="GridCell.Tab.0.left/0.0.2646.843@0.0.2646.843" timestamp="1604383688661" />
-    <state width="1324" height="174" key="GridCell.Tab.0.left/0.104.1366.768/1366.0.1280.1024@0.104.1366.768" timestamp="1604005900035" />
-    <state width="1324" height="264" key="GridCell.Tab.0.right" timestamp="1604655175331">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="1324" height="264" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1604655175331" />
-    <state width="1324" height="265" key="GridCell.Tab.0.right/0.0.2646.843@0.0.2646.843" timestamp="1604383688664" />
-    <state width="1324" height="174" key="GridCell.Tab.0.right/0.104.1366.768/1366.0.1280.1024@0.104.1366.768" timestamp="1604005900036" />
-    <state x="166" y="0" width="1024" height="724" key="SettingsEditor" timestamp="1604648505996">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="166" y="0" width="1024" height="724" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1604648505996" />
-    <state x="166" y="0" width="1024" height="728" key="SettingsEditor/0.104.1366.768/1366.0.1280.1024@0.104.1366.768" timestamp="1604079915009" />
->>>>>>> Stashed changes
-    <state x="99" y="0" width="1157" height="722" key="new project wizard" timestamp="1603422502006">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="99" y="0" width="1157" height="722" key="new project wizard/0.0.1366.728@0.0.1366.728" timestamp="1603422502006" />
+    <state x="199" y="0" width="1157" height="722" key="new project wizard/0.0.1366.728@0.0.1366.728" timestamp="1605045166009" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Sockets/src/Server.java</url>
+          <line>64</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

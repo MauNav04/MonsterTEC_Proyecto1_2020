@@ -64,7 +64,7 @@ public class Server {
         CardDealer(completeDeck, false);
         this.currentPlayer = InitialPLayer();
         if(this.currentPlayer == true){
-        Message message = new Message("init",this.player1Hand,this.player1Deck[this.player1Deck])
+        Message message = new Message("init",this.player1Hand,this.player1Deck[this.player1Deck]);
         }
 
     }
